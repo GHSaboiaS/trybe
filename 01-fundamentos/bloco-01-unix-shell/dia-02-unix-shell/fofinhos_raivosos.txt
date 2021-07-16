@@ -1,0 +1,8 @@
+tigre
+capivara
+bulldog
+coelho
+cachorro
+gato
+passaro
+rato
