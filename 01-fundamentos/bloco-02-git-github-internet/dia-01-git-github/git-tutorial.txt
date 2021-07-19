@@ -1,4 +1,10 @@
 http://devfuria.com.br/git/tutorial-para-iniciar-com-o-git-e-o-github/
 http://guides.beanstalkapp.com/version-control/common-git-commands.html
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
 git log --oneline: mostra histórico de commits resumidamente
+git config --global user.name "Seu nome"
+git config --global user.email seuemail@exemplo.br
+git config --global core.editor "code --wait" # seleciona VSCode como editor
+git config --list
+git --version
