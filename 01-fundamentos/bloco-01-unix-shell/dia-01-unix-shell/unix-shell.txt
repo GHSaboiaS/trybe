@@ -1,0 +1,5 @@
+- Unix
+- Shell
+- Git
+
+Usando zsh como Shell (antes estava com o Bash)
