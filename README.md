@@ -2,25 +2,21 @@
  
 :rotating_light: If you are not a _portuguese_ speaker, you can find the _english_ version of this document [here](#english-version---trybe). 
 
-Este repositório contêm todas as atividades de aprendizagem que estão sendo desenvolvidas por  [Maria Fernanda Michetti](https://www.linkedin.com/in/mariafernandamichetti/) enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket: (2021-2022).
+Este repositório contêm todas as atividades de aprendizagem que estão sendo desenvolvidas por  [Guilherme Saboia](https://www.linkedin.com/in/guilherme-saboia/) enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket: (2021-2022).
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 
-### Bloco 1: [Introdução - Unix & Shell](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco01-unix-e-bash)
+### Bloco 1: [Introdução - Unix & Shell](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-01-unix-shell)
 
 :ballot_box_with_check: 1-3: _Unix & Shell- Part 1_
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d588b6fdbe8333fbd8b2caee9ce41032f9db7a87
 :ballot_box_with_check: 1-4: _Unix & Shell- Part 2_
 
 
-### Bloco 2: [Git & GitHub](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco02-git-github-internet)
+### Bloco 2: [Git & GitHub](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-02-git-github-internet)
 
 :ballot_box_with_check: 2-1: _O que é e para que serve?_
 
@@ -444,7 +440,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
  # English version - Trybe
 
 
- This repository contains all activities that are being developed by  _[Maria Fernanda Michetti](https://www.linkedin.com/in/mariafernandamichetti/)_  while studying at  [Trybe](https://www.betrybe.com/)  🚀 (2020 - 2021).
+ This repository contains all activities that are being developed by  _[Guilherme Saboia](https://www.linkedin.com/in/guilherme-saboia/)_  while studying at  [Trybe](https://www.betrybe.com/)  🚀 (2021 - 2022).
 
 The web development training program from Trybe has a workload of  **1500 hours**  that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
@@ -453,14 +449,14 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 ## Web development fundamentals :hourglass_flowing_sand:
 
 
-### Part 1: [Introduction - Unix & Shell](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco01-unix-e-bash)
+### Part 1: [Introduction - Unix & Shell](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-01-unix-shell)
 
 :ballot_box_with_check: 1-3: _Unix & Shell- Part 1_
 
 :ballot_box_with_check: 1-4: _Unix & Shell- Part 2_
 
 
-### Part 2: [Git & GitHub](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco02-git-github-internet)
+### Part 2: [Git & GitHub](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-02-git-github-internet)
 
 :ballot_box_with_check: 2-1: _What is it and what is it used for?_
 
@@ -876,5 +872,5 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :black_large_square: 38-3: _Stacks_
 
 :black_large_square: 38-4: _Project: TING - Trybe Is Not Google_
-
+[3~'
 
