@@ -1,0 +1,5 @@
+coelho
+cachorro
+gato
+passaro
+rato

@@ -1,0 +1,3 @@
+ 1028  cat history.txt
+ 1029  rm history.txt
+ 1030  history | tail -3 | cat > history.txt
