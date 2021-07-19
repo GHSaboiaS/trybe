@@ -1,2 +1,3 @@
 http://devfuria.com.br/git/tutorial-para-iniciar-com-o-git-e-o-github/
 http://guides.beanstalkapp.com/version-control/common-git-commands.html
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
