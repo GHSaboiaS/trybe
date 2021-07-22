@@ -465,7 +465,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :black_large_square: 2-3: _Internet - Understading how it works_
 
 
-### Part 3: Introduction - HTML & CSS
+### Part 3: [Introduction - HTML & CSS](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-03-introducao-html-css)
 
 :black_large_square: 3-1: _HTML & CSS - Page structure_
 
