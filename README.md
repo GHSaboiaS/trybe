@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 :black_large_square: 2-3: _Internet - Entendendo como ela funciona_
 
 
-### Bloco 3: Introdução - HTML & CSS
+### Bloco 3: [Introdução - HTML & CSS](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-03-introducao-html-css)
 
 :black_large_square: 3-1: _HTML & CSS - Estruturas de página_
 
