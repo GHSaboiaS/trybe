@@ -1,2 +1,7 @@
 ping google.com
 nslookup google.com
+
+curl -O domain.com/arquivo.txt : salva arquivo.txt no dir atual, com nome arquivo.txt
+curl -o novo-arquivo.txt domain.com/arquivo.txt : salva arquivo.txt no dir atual (pode especificar outro), com nome novo-arquivo.txt
+curl mydomain.com : GET request
+curl -data "text=Hello" mydomain.com/firstpage : POST request
