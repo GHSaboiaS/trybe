@@ -13,7 +13,7 @@ p {
     font-style: oblique;
     line-height: 30px;
     text-align: center;
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 #amarelo {
