@@ -1,42 +1,19 @@
-body {
-    background-color: black;
+.img {
+    width: 200px;
 }
 
-h1 {
-    font-size: 65px;
-    color: orange;
-    text-align: center;
+.bitcoin {
+    color: #F7931A;
 }
 
-h2 {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    color: white;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-    background-color: linen;
-}
-
-.question {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-
-#list {
-    text-align: center;
+.paragraphs {
+    background-color: rgb(240, 240, 240);
+    width: 80%;
+    height: 200px;
+    overflow: auto;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
 }
