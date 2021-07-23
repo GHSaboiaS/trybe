@@ -1,0 +1,53 @@
+div:hover {
+    border: 1px solid brown;
+}
+
+div:nth-of-type(1) {
+    background-color: lightblue;
+}
+
+div:nth-of-type(2) {
+    background-color: yellowgreen;
+}
+
+div:nth-of-type(3) {
+    background-color: lightgreen;
+    height: 100px;
+}
+
+div:nth-of-type(4) {
+    background-color: lightslategrey;
+}
+
+div:nth-of-type(5) {
+    background-color: lightsalmon;
+}
+
+div:nth-of-type(1) h3 {
+    font-family: Impact;
+    color: #affffa;
+}
+
+div:nth-of-type(2) h3 {
+    font-family: Courier;
+    color: #bffffb;
+}
+
+div:nth-of-type(3) h3 {
+    font-family: Helvetica;
+    color: #cffffc;
+}
+
+div:nth-of-type(4) h3 {
+    font-family: Tahoma;
+    color: #dffffd;
+}
+
+div:nth-of-type(5) h3 {
+    font-family: Verdana;
+    color: #effffe;
+}
+
+div:nth-of-type(odd) h3 {
+    font-style: italic;
+}
