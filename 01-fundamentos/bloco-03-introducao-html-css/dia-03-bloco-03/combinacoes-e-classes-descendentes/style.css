@@ -1,0 +1,41 @@
+li {
+    font-size: 20px;
+}
+
+.li-italic {
+    font-weight: bold;
+}
+
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(even) {
+    color: green;
+}
+
+ol li:nth-of-type(odd) {
+    text-transform: capitalize;
+}
+
+.header {
+    color: red;
+}
+
+h1.header {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.programming li:nth-of-type(-n+3) {
+    color: blue;
+}
+
+.programming li:nth-of-type(2), .programming li:nth-of-type(3) {
+    background: pink;
+}
+
+.resources li a:hover {
+    font-weight: bold;
+    color: #036B52;
+}

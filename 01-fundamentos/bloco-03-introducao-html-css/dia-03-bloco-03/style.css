@@ -1,0 +1,19 @@
+.img {
+    width: 200px;
+}
+
+.bitcoin {
+    color: #F7931A;
+}
+
+.paragraphs {
+    background-color: rgb(240, 240, 240);
+    width: 80%;
+    height: 200px;
+    overflow: auto;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
