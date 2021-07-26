@@ -1,0 +1,41 @@
+*:not(html, body, #group) {
+    border: 2px solid red;
+    margin: 5px;
+}
+
+#header {
+    background-color: lightgreen;
+    height: 75px;
+}
+
+#nav {
+    background-color: rgb(245, 245, 67);
+    height: 75px;
+}
+
+#group {
+    height: 300px;
+}
+
+#article {
+    width: 70%;
+    float: left;
+    background-color: lightpink;
+}
+
+section {
+    background-color: lightblue;
+    height: 100px;
+}
+
+#aside {
+    width: 25%;
+    height: 90%;
+    float: right;
+    background-color: lightcoral;
+}
+
+#footer {
+    height: 100px;
+    background-color: aqua;
+}
