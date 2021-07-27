@@ -1,0 +1,59 @@
+h1 {
+    color: #003F70;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    background-color: bisque;
+    text-align: justify;
+}
+
+nav {
+    margin: auto;
+    width: 220px;
+}
+
+nav a {
+    background-color: aliceblue;
+    font-size: larger;
+    text-decoration: double;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+} 
+
+footer {
+    text-align: center;
+}
+
+#tabela {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secao-tabela {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#video {
+    text-align: center;
+}
+
+#referencias ul {
+    text-align: center;
+    list-style: none;
+}
+
+
+
