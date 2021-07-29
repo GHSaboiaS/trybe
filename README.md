@@ -475,18 +475,18 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 3-4: _HTML semantic elements_
 
-:ballot_box_with_check: 3-5: _Project - Lesson Learned_
+:ballot_box_with_check: 3-5: _Project - Lessons Learned_
 
   
 ### Part 4: [Introduction - JavaScript and Logic](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-04-javascript-logica)
 
 :ballot_box_with_check: 4-1: _JavaScript - First steps_
 
-:black_large_square: 4-2: _JavaScript - Array e loop For_
+:black_large_square: 4-2: _JavaScript - Array and For loop_
 
 :black_large_square: 4-3: _JavaScript - Programming Logic and Algorithms_
 
-:black_large_square: 4-4: _JavaScript - Objects and functions_
+:black_large_square: 4-4: _JavaScript - Objects and Functions_
 
 :black_large_square: 4-5: _Project - Playground Functions_
 
