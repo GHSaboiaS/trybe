@@ -61,10 +61,17 @@ let size = numbers.length;
 // }
 
 // Exercício 7
-let smallest = numbers[0];
-for (let number of numbers) {
-    if (number < smallest) {
-        smallest = number;
-    }
-}
-console.log(smallest);
+// let smallest = numbers[0];
+// for (let number of numbers) {
+//     if (number < smallest) {
+//         smallest = number;
+//     }
+// }
+// console.log(smallest);
+
+// Exercício 8
+// let array = [];
+// for (let counter = 1; counter <= 25; counter += 1) {
+//     array.push(counter);
+// }
+// console.log(array);
