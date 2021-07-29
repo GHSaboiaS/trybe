@@ -60,3 +60,11 @@ let size = numbers.length;
 //     console.log(oddCounter, 'valores ímpares encontrados');
 // }
 
+// Exercício 7
+let smallest = numbers[0];
+for (let number of numbers) {
+    if (number < smallest) {
+        smallest = number;
+    }
+}
+console.log(smallest);
