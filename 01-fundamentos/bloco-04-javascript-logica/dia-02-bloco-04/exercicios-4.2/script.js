@@ -1,7 +1,7 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let size = numbers.length;
 
-// Exercício 1
+// ==== Exercício 1 ====
 // for (let counter = 1; counter < size; counter += 1) {
 //     console.log(numbers[counter]);
 // }
@@ -9,14 +9,14 @@ let size = numbers.length;
 //     console.log(number);
 // }
 
-// Exercício 2
+// ==== Exercício 2 ====
 // let sum = 0;
 // for (let number of numbers) {
 //     sum += number;
 // }
 // console.log(sum);
 
-// Exercício 3
+// ==== Exercício 3 ====
 // let sum = 0;
 // for (let number of numbers) {
 //     sum += number;
@@ -24,7 +24,7 @@ let size = numbers.length;
 // let average = sum/size;
 // console.log(average);
 
-// Exercício 4
+// ==== Exercício 4 ====
 // let sum = 0;
 // for (let number of numbers) {
 //     sum += number;
@@ -37,7 +37,7 @@ let size = numbers.length;
 //     console.log('average:', average, '\nvalor menor ou igual a 20');
 // }
 
-// Exercício 5
+// ==== Exercício 5 ====
 // let largest = 0;
 // for (let number of numbers) {
 //     if (number > largest) {
@@ -46,7 +46,7 @@ let size = numbers.length;
 // }
 // console.log(largest);
 
-// Exercício 6
+// ==== Exercício 6 ====
 // let oddCounter = 0;
 // for (let number of numbers) {
 //     if (number % 2 != 0) {
@@ -60,7 +60,7 @@ let size = numbers.length;
 //     console.log(oddCounter, 'valores ímpares encontrados');
 // }
 
-// Exercício 7
+// ==== Exercício 7 ====
 // let smallest = numbers[0];
 // for (let number of numbers) {
 //     if (number < smallest) {
@@ -69,9 +69,13 @@ let size = numbers.length;
 // }
 // console.log(smallest);
 
-// Exercício 8
+// ==== Exercício 8 ====
 // let array = [];
 // for (let counter = 1; counter <= 25; counter += 1) {
 //     array.push(counter);
 // }
 // console.log(array);
+// ==== Exercício 9 ====
+// for (number of array) {
+//     console.log(number/2);
+// }
