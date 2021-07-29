@@ -70,12 +70,50 @@ let size = numbers.length;
 // console.log(smallest);
 
 // ==== Exercício 8 ====
-// let array = [];
-// for (let counter = 1; counter <= 25; counter += 1) {
-//     array.push(counter);
-// }
+let array = [];
+for (let counter = 1; counter <= 25; counter += 1) {
+    array.push(counter);
+}
 // console.log(array);
 // ==== Exercício 9 ====
 // for (number of array) {
 //     console.log(number/2);
 // }
+
+// ==== Bônus ====
+// 1. Ordem crescente
+// for (let after = 1; after < size; after += 1) {
+//     for (let before = 0; before < after; before += 1) {
+//         if (numbers[after] < numbers[before]) {
+//             let position = numbers[after];
+//             numbers[after] = numbers[before];
+//             numbers[before] = position;
+//         }
+//     }
+// }
+// console.log(numbers);
+
+// 2. Ordem decrescente
+// for (let after = 1; after < size; after += 1) {
+//     for (let before = 0; before < after; before += 1) {
+//         if (numbers[after] > numbers[before]) {
+//             let position = numbers[after];
+//             numbers[after] = numbers[before];
+//             numbers[before] = position;
+//         }
+//     }
+// }
+// console.log(numbers)
+
+// 3. Novo array
+let newArray = [];
+for (let counter = 0; counter < size; counter += 1) {
+    if (counter == size - 1) {
+        newArray.push(numbers[counter] * 2);
+    }
+    else {
+        newArray.push(numbers[counter] * numbers[counter + 1]);
+    }
+}
+console.log(numbers);
+console.log(newArray);
