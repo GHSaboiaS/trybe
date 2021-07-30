@@ -41,9 +41,13 @@ function weirdPiramid(n) {
         if (counter == 1) {
             process.stdout.write(space.repeat((n - counter) / 2) + asterisc.repeat(counter) + space.repeat((n - counter) / 2) + '\n');
         }
-        else {
-            process.stdout.write(space.repeat((counter - 1) / 2)+ asterisc + space.repeat (counter - 2) + asterisc + space.repeat((counter - 1) / 2) + '\n')
+        else if (counter < n) {
+            process.stdout.write(space.repeat((n - counter) / 2) + asterisc + space.repeat(counter - 2) + asterisc + space.repeat((n - counter) / 2) + '\n');
+        }
+        else if (counter == n) {
+            process.stdout.write(asterisc.repeat(n));
         }
     }
 }
-weirdPiramid(10);
+weirdPiramid(11);
+
