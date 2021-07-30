@@ -49,5 +49,28 @@ function weirdPiramid(n) {
         }
     }
 }
-weirdPiramid(11);
+// weirdPiramid(11);
 
+// 6- Faça um programa que diz se um número definido numa variável é primo ou não.
+// Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
+// Dica: você vai precisar de fazer um loop que vá de 0 ao número definido; Além disso, vai precisar de fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+function isPrimo(n) {
+    let divisorCounter = 0;
+    let divisors = [];
+    for (let index = n; index > 0; index -= 1) {
+        if (n % index == 0) {
+            divisorCounter += 1;
+            divisors.push(index)
+        }
+    }
+    if (divisorCounter != 2) {
+        console.log(n + ' não é primo\nTem ' + divisorCounter + ' divisores');
+        console.log(divisors);
+    }
+    else {
+        console.log(n + ' é primo');
+        console.log(divisors);
+    }
+    console.log(divisors.sort(function (a, b) { return a - b }));
+}
+isPrimo(2304)
