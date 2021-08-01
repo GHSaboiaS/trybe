@@ -12,8 +12,7 @@ function buildSquare(n) {
 
 // 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. 
 function buildTriangle(n) {
-    let asterisc = '*';
-    for (let counter1 = 1; counter1 <= n; counter1 += 1) {
+    for (let counter1 = 1, asterisc = '*'; counter1 <= n; counter1 += 1) {
         console.log(asterisc.repeat(counter1));
     }
 }
