@@ -41,9 +41,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check:  4-1: _JavaScript - Primeiros passos_
 
-:black_large_square: 4-2: _JavaScript - Array e loop For_
+:ballot_box_with_check: 4-2: _JavaScript - Array e loop For_
 
-:black_large_square: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+:ballot_box_with_check: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 
 :black_large_square: 4-4: _JavaScript - Objetos e funções_
 
@@ -482,9 +482,9 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 4-1: _JavaScript - First steps_
 
-:black_large_square: 4-2: _JavaScript - Array and For loop_
+:ballot_box_with_check: 4-2: _JavaScript - Array and For loop_
 
-:black_large_square: 4-3: _JavaScript - Programming Logic and Algorithms_
+:ballot_box_with_check: 4-3: _JavaScript - Programming Logic and Algorithms_
 
 :black_large_square: 4-4: _JavaScript - Objects and Functions_
 
