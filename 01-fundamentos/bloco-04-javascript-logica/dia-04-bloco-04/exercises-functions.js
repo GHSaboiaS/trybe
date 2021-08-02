@@ -53,3 +53,21 @@ function getSmallest(array) {
 }
 // console.log(getSmallest(testArray))
 
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+// Valor esperado no retorno da função: Fernanda .
+let testArrayString = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+function getLongest(array) {
+    let longest = array[0];
+    let sizeOfLongest = longest.length;
+    for (item of array) {
+        if (item.length > sizeOfLongest) {
+            longest = item;
+            sizeOfLongest = item.length;
+        } else {
+            {};
+        }
+    }
+    return longest;
+}
+console.log(getLongest(testArrayString))
