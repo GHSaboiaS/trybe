@@ -21,16 +21,18 @@ function verificaPalindrome(string) {
 // Valor esperado no retorno da função: 4 .
 function getLargest(array) {
     let largest = array[0];
-    for (let item of array) {
-        if (item > largest) {
-            largest = item;
+    let indexOfLargest = array.indexOf(largest);
+    for (let key in array) {
+        if (array[key] > largest) {
+            largest = array[key];
+            indexOfLargest = key;
         } else {
             {};
         }
     }
-    return largest;
+    return indexOfLargest;
 }
-let testArray = [-2, -3, -6, 7, -10, -1];
+let testArray = [2, 4, 6, -7, 10, 0, -3, 10];
 // console.log(getLargest(testArray))
 
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
@@ -38,13 +40,16 @@ let testArray = [-2, -3, -6, 7, -10, -1];
 // Valor esperado no retorno da função: 6 .
 function getSmallest(array) {
     let smallest = array[0];
-    for (item of array) {
-        if (item < smallest) {
-            smallest = item;
+    let indexOfSmallest = array.indexOf(smallest);
+    for (let key in array) {
+        if (array[key] < smallest) {
+            smallest = array[key];
+            indexOfSmallest = key;
         } else {
             {};
         }
     }
-    return smallest;
+    return indexOfSmallest;
 }
 // console.log(getSmallest(testArray))
+
