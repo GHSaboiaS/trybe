@@ -13,24 +13,11 @@ let info = {
     }
 }
 
-let infoMargarida = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-};
-
-let infoPatinhas = {
-    personagem: 'Tio Patinhas',
-    origem: 'Christmas on Bear Mountain, Dell\'s Four Color Comics #178',
-    nota: 'O último MacPatinhas',
-    recorrente: 'Sim'
-}
-
 // Exercise 1
-//console.log('Bem-vinda,', info.personagem);
+console.log('Bem-vinda,', info.infoMargarida.personagem);
 
 // Exercise 2
-infoMargarida.recorrente = 'Sim'; // info['recorrente'] = 'Sim';
+// infoMargarida.recorrente = 'Sim'; // info['recorrente'] = 'Sim';
 // console.log(info);
 
 // Exercise 3
@@ -61,9 +48,6 @@ function getInfo() {
     }
 }
 // console.log(personagens)
-for (let counter = 0; counter < Object.keys(info).length; counter += 1) {
-    // console.log(personagens[counter]);
-}
 getInfo(info)
 console.log(personagens[0], 'e', personagens[1]);
 console.log(origens[0], 'e', origens[1]);
