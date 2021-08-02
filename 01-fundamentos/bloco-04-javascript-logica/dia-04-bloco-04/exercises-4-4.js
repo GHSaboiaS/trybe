@@ -12,9 +12,9 @@ let info = {
         recorrente: 'Sim',
     }
 }
-
+let size = Object.keys(info).length;
 // Exercise 1
-console.log('Bem-vinda,', info.infoMargarida.personagem);
+// console.log('Bem-vinda,', info.infoMargarida.personagem);
 
 // Exercise 2
 // infoMargarida.recorrente = 'Sim'; // info['recorrente'] = 'Sim';
@@ -32,7 +32,7 @@ for (let key in info) {
 
 // Exercise 5
 let personagens = [], origens = [], notas = [], recorrentes = [];
-function getInfo() {
+function getInfo(info) {
     for (let key in info) {
         for (let specificKey in info[key]) {
             if (specificKey === 'personagem') {
@@ -48,12 +48,18 @@ function getInfo() {
     }
 }
 // console.log(personagens)
-getInfo(info)
-console.log(personagens[0], 'e', personagens[1]);
-console.log(origens[0], 'e', origens[1]);
-console.log(notas[0], 'e', notas[1]);
-if (recorrentes[0] === recorrentes[1]) {
-    console.log('Ambos recorrentes');
+// getInfo(info)
+function printInfo() {
+    getInfo(info);
+    for (let counter = 0; counter < size - 1; counter += 1) {
+        console.log(personagens[counter], 'e', personagens[counter + 1]);
+        console.log(origens[counter], 'e', origens[counter + 1]);
+        console.log(notas[counter], 'e', notas[counter + 1]);
+        if (recorrentes[counter] === recorrentes[counter + 1]) {
+            console.log('Ambos recorrentes');
+        }
+    }    
 }
+printInfo(info)
 
 
