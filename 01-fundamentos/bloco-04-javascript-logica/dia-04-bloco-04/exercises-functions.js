@@ -115,5 +115,16 @@ function sumUpToN(n) {
 // verificaFimPalavra('joaofernando', 'fernan') ;
 // Retorno esperado: false
 function isEnd(word, ending) {
-    
+    let wordSize = word.length;
+    let endingSize = ending.length;
+    for (counter = -1; counter >= -endingSize; counter -= 1) {
+        lastItemWord = word.charAt(wordSize + counter);
+        if (lastItemWord === ending.charAt(endingSize + counter)) {
+            {};
+        } else {
+            return false;
+        }
+    }
+    return true
 }
+console.log(isEnd('trybe', 'ybe'))
