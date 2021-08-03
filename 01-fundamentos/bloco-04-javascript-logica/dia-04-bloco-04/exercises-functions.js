@@ -76,8 +76,8 @@ function getLongest(array) {
 // Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
 // Valor esperado no retorno da função: 2 .
 let myArray = [2, 3, 2, 5, 8, 2, 3];
-let myObj = {};
 function getMostRepeated(array) {
+    let myObj = {};
     for (item of array) {
         if (item in myObj) {
             myObj[item] += 1;
@@ -93,4 +93,27 @@ function getMostRepeated(array) {
     }
     return mostRepeated;
 }
-console.log(getMostRepeated(myArray))
+// console.log(getMostRepeated(myArray))
+
+// 6 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+// Valor de teste: N = 5 .
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
+function sumUpToN(n) {
+    let total = 0
+    for (let counter = 1; counter <= n; counter += 1) {
+        total += counter;
+    }
+    return total;
+}
+// console.log(sumUpToN(6))
+
+// 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+// Valor de teste: 'trybe' e 'be'
+// Valor esperado no retorno da função: true
+// verificaFimPalavra('trybe', 'be') ;
+// Retorno esperado: true
+// verificaFimPalavra('joaofernando', 'fernan') ;
+// Retorno esperado: false
+function isEnd(word, ending) {
+    
+}
