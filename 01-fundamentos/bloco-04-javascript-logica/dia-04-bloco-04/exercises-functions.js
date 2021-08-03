@@ -70,4 +70,27 @@ function getLongest(array) {
     }
     return longest;
 }
-console.log(getLongest(testArrayString))
+// console.log(getLongest(testArrayString))
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+// Valor esperado no retorno da função: 2 .
+let myArray = [2, 3, 2, 5, 8, 2, 3];
+let myObj = {};
+function getMostRepeated(array) {
+    for (item of array) {
+        if (item in myObj) {
+            myObj[item] += 1;
+        } else {
+            myObj[item] = 1;
+        }
+    }
+    let mostRepeated = Object.keys(myObj)[0];
+    for (key in myObj) {
+        if (myObj[key] > mostRepeated) {
+            mostRepeated = key;
+        }
+    }
+    return mostRepeated;
+}
+console.log(getMostRepeated(myArray))
