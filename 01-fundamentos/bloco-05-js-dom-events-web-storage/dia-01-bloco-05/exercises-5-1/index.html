@@ -39,6 +39,9 @@
         <p>Texto padrão do nosso site</p>
         <p>-----</p>
         <p>Trybe</p>
+
+        <p class="change">I will change</p>
+        <button onclick="change()">Click Me!</button>
       </section>
     </main>
     <script>
@@ -91,7 +94,15 @@
             console.log(paragraph.innerText);
         }
     }
-    showParagraphs()
+
+    function change() {
+        let fourthParagraph = document.getElementsByTagName("p")[3];
+        console.log(fourthParagraph)
+        fourthParagraph.style.fontSize = "large";
+        fourthParagraph.style.fontFamily = "Impact,Charcoal,sans-serif";
+        fourthParagraph.style.fontStyle = "normal";
+        fourthParagraph.style.color = "blue";
+    }  
 
     </script>
   </body>
