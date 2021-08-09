@@ -54,20 +54,45 @@
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       let firstParagraph = document.getElementsByTagName("p")[0];
-       firstParagraph.innerText = "The future of humans is the future of technology.";
+       
+    function changeParagraph() {
+        let firstParagraph = document.getElementsByTagName("p")[0];
+        firstParagraph.innerText = "The future of humans is the future of technology.";
+    }
+    changeParagraph()
+        
+    function changeBackground() {
+        let mainContent = document.getElementsByClassName("main-content")[0];
+        mainContent.style.backgroundColor = "rgb(76, 164, 109)";
+    }
+    changeBackground()
 
-       let mainContent = document.getElementsByClassName("main-content")[0];
-       mainContent.style.backgroundColor = "rgb(76, 164, 109)";
+    function changeAnotherBackground() {
+        let centerContent = document.getElementsByClassName("center-content")[0];
+        centerContent.style.backgroundColor = "white";
+    }
+    changeAnotherBackground()
 
-       let centerContent = document.getElementsByClassName("center-content")[0];
-       centerContent.style.backgroundColor = "white";
+    function changeInnerText() {
+        let title = document.getElementsByTagName("h1")[0];
+        title.innerText = "Exercício 5.1 - JavaScript";
+    }
+    changeInnerText()
+       
+    function changeThirdParagraph() {
+        let thirdParagraph = document.getElementsByTagName("p")[2];
+        thirdParagraph.innerText = thirdParagraph.innerText.toUpperCase();
+    }
+    changeThirdParagraph()
 
-       let title = document.getElementsByTagName("h1")[0];
-       title.innerText = "Exercício 5.1 - JavaScript";
+    function showParagraphs() {
+        let paragraphs = document.getElementsByTagName("p");
+        for (let paragraph of paragraphs) {
+            console.log(paragraph.innerText);
+        }
+    }
+    showParagraphs()
 
-       let thirdParagraph = document.getElementsByTagName("p")[2];
-       thirdParagraph.innerText = thirdParagraph.innerText.toUpperCase();
     </script>
   </body>
 </html>
