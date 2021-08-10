@@ -132,6 +132,13 @@
       // 14
       sectionCenterContent.parentNode.style.background = 'green';
 
+      // 15
+      let ulChildren = uList.children;
+      let listLength = ulChildren.length;
+      for (let counter = 1; counter <= 2; counter += 1) {
+        uList.removeChild(ulChildren[listLength - counter]);
+      }
+
     </script>
   </body>
 </html>
