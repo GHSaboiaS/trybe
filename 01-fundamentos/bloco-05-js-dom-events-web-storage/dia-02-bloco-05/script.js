@@ -19,7 +19,7 @@ pai.style.color = "rgb(222, 22, 222)";
 
 // 3
 let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
-primeiroFilhoDoFilho.innerHTML = "Bom dia!";
+primeiroFilhoDoFilho.innerText = "Bom dia!";
 
 // 4
 // let primeiroFilho = pai.firstElementChild;
@@ -38,21 +38,36 @@ let atencao = ondeVoceEsta.nextSibling;
 
 // 9
 let irmaoOndeVoceEsta = document.createElement('section');
-// let textNode = document.createTextNode('Water');
-// irmaoOndeVoceEsta.appendChild(textNode);
-pai.appendChild(irmaoOndeVoceEsta)
+// pai.appendChild(irmaoOndeVoceEsta)
 
 // 10
 let filhoOndeVoceEsta = document.createElement('p');
-let pInnerText = document.createTextNode('Child paragraph');
-filhoOndeVoceEsta.appendChild(pInnerText);
-ondeVoceEsta.appendChild(filhoOndeVoceEsta)
+filhoOndeVoceEsta.innerText = 'Child paragraph';
+// ondeVoceEsta.appendChild(filhoOndeVoceEsta)
 
 // 11
 let filhoDoFilhoDoFilho = document.createElement('p');
-let filhoDoFilhoDoFilhoInnerText = document.createTextNode('Little child');
-filhoDoFilhoDoFilho.appendChild(filhoDoFilhoDoFilhoInnerText);
-primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+filhoDoFilhoDoFilho.innerText = 'Little child';
+// primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
 
 // 12
-let terceiroFilho = filhoDoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
+// let terceiroFilho = filhoDoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
+
+// 13
+let childrenNodesPai = pai.childNodes;
+let childrenOndeVoceEsta = ondeVoceEsta.childNodes;
+
+for (let counter = childrenNodesPai.length - 1; counter >= 0; counter -= 1) {
+    console.log(counter, childrenNodesPai[counter])
+    if (counter > 3) {
+        pai.removeChild(childrenNodesPai[counter])
+    }
+}
+
+for (let counter = childrenOndeVoceEsta.length - 1; counter >= 0; counter -= 1) {
+    if (counter >= 2) {
+        ondeVoceEsta.removeChild(childrenOndeVoceEsta[counter]);
+    }
+}
+
+
