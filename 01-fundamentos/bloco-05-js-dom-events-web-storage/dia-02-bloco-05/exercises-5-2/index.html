@@ -95,6 +95,18 @@
       image.classList.add('small-image');
       sectionLeftContent.appendChild(image);
 
+      // 8
+      let uList = document.createElement('ul');
+      let numbersList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let number of numbersList) {
+          let listItem = document.createElement('li');
+          listItem.innerText = number;
+          uList.appendChild(listItem);
+      }
+
+      sectionRightContent.appendChild(uList);
+
     </script>
   </body>
 </html>
