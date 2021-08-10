@@ -11,4 +11,7 @@
 // console.log(document.querySelector('.first').nextElementSibling)
 
 let ondeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
-console.log(ondeVoceEsta)
+// console.log(ondeVoceEsta)
+
+let pai = ondeVoceEsta.parentNode;
+pai.style.color = "rgb(222, 22, 222)";
