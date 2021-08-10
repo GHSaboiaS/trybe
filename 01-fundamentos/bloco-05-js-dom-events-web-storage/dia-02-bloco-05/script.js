@@ -34,7 +34,7 @@ let atencao = ondeVoceEsta.nextSibling;
 // let terceiroFilho = ondeVoceEsta.nextElementSibling;
 
 // 8
-let terceiroFilho = pai.childNodes[5];
+// let terceiroFilho = pai.childNodes[5];
 
 // 9
 let irmaoOndeVoceEsta = document.createElement('section');
@@ -47,3 +47,12 @@ let filhoOndeVoceEsta = document.createElement('p');
 let pInnerText = document.createTextNode('Child paragraph');
 filhoOndeVoceEsta.appendChild(pInnerText);
 ondeVoceEsta.appendChild(filhoOndeVoceEsta)
+
+// 11
+let filhoDoFilhoDoFilho = document.createElement('p');
+let filhoDoFilhoDoFilhoInnerText = document.createTextNode('Little child');
+filhoDoFilhoDoFilho.appendChild(filhoDoFilhoDoFilhoInnerText);
+primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+
+// 12
+let terceiroFilho = filhoDoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
