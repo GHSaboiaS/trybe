@@ -35,3 +35,15 @@ let atencao = ondeVoceEsta.nextSibling;
 
 // 8
 let terceiroFilho = pai.childNodes[5];
+
+// 9
+let irmaoOndeVoceEsta = document.createElement('section');
+// let textNode = document.createTextNode('Water');
+// irmaoOndeVoceEsta.appendChild(textNode);
+pai.appendChild(irmaoOndeVoceEsta)
+
+// 10
+let filhoOndeVoceEsta = document.createElement('p');
+let pInnerText = document.createTextNode('Child paragraph');
+filhoOndeVoceEsta.appendChild(pInnerText);
+ondeVoceEsta.appendChild(filhoOndeVoceEsta)
