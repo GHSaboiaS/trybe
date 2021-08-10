@@ -50,7 +50,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 :ballot_box_with_check: 4-5: _Projeto - Playground Functions_
 
   
-### Bloco 5: Javascript: DOM, Eventos e Web Storage
+### Bloco 5: [Javascript: DOM, Eventos e Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
 
 :ballot_box_with_check: 5-1: _JavaScript - DOM e seletores_
 
@@ -491,7 +491,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :ballot_box_with_check: 4-5: _Project - Playground Functions_
 
 
-### Part 5: Javascript: DOM, Events e Web Storage
+### Part 5: [Javascript: DOM, Events e Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
 
 :ballot_box_with_check: 5-1: _JavaScript - DOM and selectors_
 
