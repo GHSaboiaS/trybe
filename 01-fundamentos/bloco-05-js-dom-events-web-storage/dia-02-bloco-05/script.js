@@ -19,4 +19,14 @@ pai.style.color = "rgb(222, 22, 222)";
 
 // 3
 let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
-primeiroFilhoDoFilho.innerText = "Bom dia!";
+primeiroFilhoDoFilho.innerHTML = "Bom dia!";
+
+// 4
+// let primeiroFilho = pai.firstElementChild;
+
+// 5
+let primeiroFilho = ondeVoceEsta.previousElementSibling;
+
+// 6
+let atencao = ondeVoceEsta.nextSibling;
+
