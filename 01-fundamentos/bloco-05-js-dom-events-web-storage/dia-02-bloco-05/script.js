@@ -30,3 +30,8 @@ let primeiroFilho = ondeVoceEsta.previousElementSibling;
 // 6
 let atencao = ondeVoceEsta.nextSibling;
 
+// 7
+// let terceiroFilho = ondeVoceEsta.nextElementSibling;
+
+// 8
+let terceiroFilho = pai.childNodes[5];
