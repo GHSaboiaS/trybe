@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
   
 // Escreva seu código abaixo.
+// 1
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 function createCalendarDays() {
   let ulDays = document.querySelector("#days");
@@ -31,3 +32,13 @@ function createCalendarDays() {
   }
 }
 createCalendarDays()
+
+// 2
+function createButton(holidays) {
+  let buttonsContainer = document.querySelector(".buttons-container");
+  let holidaysButton = document.createElement("button");
+  holidaysButton.innerText = holidays;
+  holidaysButton.classList.add("btn-holiday");
+  buttonsContainer.appendChild(holidaysButton)
+}
+createButton("Feriados");
