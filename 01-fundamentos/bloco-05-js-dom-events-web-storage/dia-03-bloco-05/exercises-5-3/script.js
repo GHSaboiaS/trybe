@@ -22,6 +22,7 @@ function createCalendarDays() {
     let currentLi = document.createElement("li");
     currentLi.classList.add("day");
     currentLi.innerText = day;
+    currentLi.style.lineHeight = "30px";
     if (day === 24 || day === 25 || day === 31) {
       currentLi.classList.add("holiday");
     }
@@ -97,7 +98,16 @@ function reduceText(originEvent) {
 }
 let daysList = document.querySelectorAll(".day");
 for (let day of daysList) {
-  day.addEventListener("mouseover", enlargeText)
-  day.addEventListener("mouseout", reduceText)
+  day.addEventListener("mouseover", enlargeText);
+  day.addEventListener("mouseout", reduceText);
 }
+
+// 7
+function addTask(task) {
+  let divMyTasks = document.querySelector(".my-tasks");
+  let myTask = document.createElement("span");
+  myTask.innerText = task;
+  divMyTasks.appendChild(myTask);
+}
+addTask("Passear com o Tobias");
 
