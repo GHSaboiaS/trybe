@@ -62,7 +62,42 @@ holidaysButton.addEventListener("click", changeHolidaysBackground);
 function createFriday(friday) {
   let buttonsContainer = document.querySelector(".buttons-container");
   let fridayButton = document.createElement("button");
+  fridayButton.id = "btn-friday";
   fridayButton.innerText = friday;
   buttonsContainer.appendChild(fridayButton);
 }
 createFriday("Sexta-Feira");
+
+// 5
+function changeFridayText() {
+  let fridayDays = document.querySelectorAll(".friday");
+  let myNumber = 4;
+  for (friday of fridayDays) {
+    if (friday.innerText === "FRIDAY!!!") {
+      friday.innerText = myNumber;
+      myNumber += 7;
+    } else {
+      friday.innerText = "FRIDAY!!!";
+    }
+  }
+}
+let fridayButton = document.querySelector("#btn-friday");
+fridayButton.addEventListener("click", changeFridayText);
+
+// 6
+function enlargeText(originEvent) {
+  let element = originEvent.target;
+  let elementFontSize = element.style.fontSize
+  element.style.fontSize = "30px";
+}
+function reduceText(originEvent) {
+  let element = originEvent.target;
+  let elementFontSize = element.style.fontSize
+  element.style.fontSize = "20px";
+}
+let daysList = document.querySelectorAll(".day");
+for (let day of daysList) {
+  day.addEventListener("mouseover", enlargeText)
+  day.addEventListener("mouseout", reduceText)
+}
+
