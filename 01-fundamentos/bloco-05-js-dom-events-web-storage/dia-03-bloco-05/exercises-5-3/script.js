@@ -44,7 +44,6 @@ function createButton(holidays) {
 createButton("Feriados");
 
 // 3
-let holidaysButton = document.querySelector(".btn-holiday")
 function changeHolidaysBackground() {
   let holidays = document.getElementsByClassName("holiday");
   for (holiday of holidays) {
@@ -56,4 +55,14 @@ function changeHolidaysBackground() {
     }
   }
 }
+let holidaysButton = document.querySelector(".btn-holiday")
 holidaysButton.addEventListener("click", changeHolidaysBackground);
+
+// 4
+function createFriday(friday) {
+  let buttonsContainer = document.querySelector(".buttons-container");
+  let fridayButton = document.createElement("button");
+  fridayButton.innerText = friday;
+  buttonsContainer.appendChild(fridayButton);
+}
+createFriday("Sexta-Feira");
