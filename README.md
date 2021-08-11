@@ -2,7 +2,7 @@
  
 :rotating_light: If you are not a _portuguese_ speaker, you can find the _english_ version of this document [here](#english-version---trybe). 
 
-Este repositório contêm todas as atividades de aprendizagem que estão sendo desenvolvidas por  [Guilherme Saboia](https://www.linkedin.com/in/guilherme-saboia/) enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket: (2021-2022).
+Este repositório contém todas as atividades de aprendizagem que estão sendo desenvolvidas por  [Guilherme Saboia](https://www.linkedin.com/in/guilherme-saboia/) enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket: (2021-2022).
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
@@ -45,16 +45,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 
-:black_large_square: 4-4: _JavaScript - Objetos e funções_
+:ballot_box_with_check: 4-4: _JavaScript - Objetos e funções_
 
-:black_large_square: 4-5: _Projeto - Playground Functions_
+:ballot_box_with_check: 4-5: _Projeto - Playground Functions_
 
   
-### Bloco 5: Javascript: DOM, Eventos e Web Storage
+### Bloco 5: [Javascript: DOM, Eventos e Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
 
-:black_large_square: 5-1: _JavaScript - DOM e seletores_
+:ballot_box_with_check: 5-1: _JavaScript - DOM e seletores_
 
-:black_large_square: 5-2: _JavaScript - Trabalhando com elementos_
+:ballot_box_with_check: 5-2: _JavaScript - Trabalhando com elementos_
 
 :black_large_square: 5-3: _JavaScript - Eventos_
 
@@ -486,16 +486,16 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 4-3: _JavaScript - Programming Logic and Algorithms_
 
-:black_large_square: 4-4: _JavaScript - Objects and Functions_
+:ballot_box_with_check: 4-4: _JavaScript - Objects and Functions_
 
-:black_large_square: 4-5: _Project - Playground Functions_
+:ballot_box_with_check: 4-5: _Project - Playground Functions_
 
 
-### Part 5: Javascript: DOM, Events e Web Storage
+### Part 5: [Javascript: DOM, Events e Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
 
-:black_large_square: 5-1: _JavaScript - DOM and selectors_
+:ballot_box_with_check: 5-1: _JavaScript - DOM and selectors_
 
-:black_large_square: 5-2: _JavaScript - Working with elements_
+:ballot_box_with_check: 5-2: _JavaScript - Working with elements_
 
 :black_large_square: 5-3: _JavaScript - Events_
 
