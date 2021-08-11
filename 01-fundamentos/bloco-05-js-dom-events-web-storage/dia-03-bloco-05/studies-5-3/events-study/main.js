@@ -61,6 +61,16 @@ myWebpage.addEventListener("click", redirect);
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+function changeBackground(originEvent) {
+    let myTop = originEvent.target;
+    myTop.style.background = "black";
+}
+function resetBackground(originEvent) {
+    let myTop = originEvent.target;
+    myTop.style.background = "rgb(51, 51, 51)";
+}
+myWebpage.addEventListener("mouseenter", changeBackground);
+myWebpage.addEventListener("mouseleave", resetBackground);
 
 // Segue abaixo um exemplo do uso de event.target:
 
@@ -72,6 +82,8 @@ function resetText(event) {
 }
 
 firstLi.addEventListener('dblclick', resetText);
+secondLi.addEventListener('dblclick', resetText);
+thirdLi.addEventListener('dblclick', resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
