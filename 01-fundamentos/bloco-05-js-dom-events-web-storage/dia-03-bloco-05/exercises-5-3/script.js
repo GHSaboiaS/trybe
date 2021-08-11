@@ -42,3 +42,18 @@ function createButton(holidays) {
   buttonsContainer.appendChild(holidaysButton)
 }
 createButton("Feriados");
+
+// 3
+let holidaysButton = document.querySelector(".btn-holiday")
+function changeHolidaysBackground() {
+  let holidays = document.getElementsByClassName("holiday");
+  for (holiday of holidays) {
+    let holidaysBackground = holiday.style.background;
+    if (holidaysBackground === "rgb(238, 238, 238)" || holidaysBackground === "") {
+      holiday.style.background = "rgb(38, 38, 38)";
+    } else {
+      holiday.style.background = "rgb(238, 238, 238)";
+    }
+  }
+}
+holidaysButton.addEventListener("click", changeHolidaysBackground);
