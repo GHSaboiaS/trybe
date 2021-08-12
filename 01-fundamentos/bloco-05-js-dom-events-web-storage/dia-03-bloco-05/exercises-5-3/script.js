@@ -125,10 +125,8 @@ addLegend("red");
 function selectTask(originEvent) {
   let selectedElement = originEvent.target;
   if (selectedElement.classList.contains("task-selected")) {
-    console.log("removing");
     selectedElement.classList.remove("task-selected");
   } else {
-    console.log("adding");
     selectedElement.classList.add("task-selected");
   }  
 }

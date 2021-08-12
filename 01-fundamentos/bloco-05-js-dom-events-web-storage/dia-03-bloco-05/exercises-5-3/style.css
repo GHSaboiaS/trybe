@@ -87,8 +87,13 @@ label {
     vertical-align: middle;
     width: 35px;
 }
-  
+
 .my-tasks div:hover {
+    height: 45px;
+    width: 45px;
+}
+  
+.my-tasks div.task-selected {
     height: 45px;
     width: 45px;
 }
