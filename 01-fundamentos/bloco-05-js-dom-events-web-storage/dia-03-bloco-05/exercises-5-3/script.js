@@ -173,7 +173,7 @@ function addAppointment(originEvent) {
 }
 let addButton = document.querySelector(".btn-add");
 let inputBox = document.querySelector("#task-input");
-inputBox.addEventListener("keydown", addAppointment)
+inputBox.addEventListener("keydown", addAppointment);
 addButton.addEventListener("click", addAppointment);
 
 // Bonus - remove appointment
