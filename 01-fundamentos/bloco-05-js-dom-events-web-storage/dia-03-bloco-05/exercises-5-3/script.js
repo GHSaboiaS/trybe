@@ -88,13 +88,11 @@ fridayButton.addEventListener("click", changeFridayText);
 // 6
 function enlargeText(originEvent) {
   let element = originEvent.target;
-  let elementFontSize = element.style.fontSize;
-  elementFontSize = "30px";
+  element.style.fontSize = "30px";
 }
 function reduceText(originEvent) {
   let element = originEvent.target;
-  let elementFontSize = element.style.fontSize;
-  elementFontSize = "20px";
+  element.style.fontSize = "20px";
 }
 let daysList = document.querySelectorAll(".day");
 for (let day of daysList) {
