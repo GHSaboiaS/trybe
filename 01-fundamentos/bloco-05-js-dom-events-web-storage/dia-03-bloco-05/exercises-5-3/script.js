@@ -114,12 +114,12 @@ addTask("Passear com o Tobias");
 // 8
 function addLegend(color) {
   let divTask = document.createElement("div");
-  let divMyTasks = document.querySelector("div.my-tasks")
+  let divMyTasks = document.querySelector("div.my-tasks");
   divTask.classList.add("task");
   divTask.style.background = color;
   divMyTasks.appendChild(divTask);
 }
-addLegend("yellow");
+addLegend("red");
 
 // 9
 function selectTask(originEvent) {
@@ -133,4 +133,23 @@ function selectTask(originEvent) {
   }  
 }
 let divTask = document.querySelector(".task");
-divTask.addEventListener("click", selectTask)
+divTask.addEventListener("click", selectTask);
+
+// 10
+function addTaskToDay(originEvent) {
+  let task = document.querySelector(".task");
+  let taskColor = task.style.background;
+  let day = originEvent.target;
+  let dayColor = day.style.color;
+  if (task.classList.contains("task-selected")) {
+    if (dayColor !== taskColor) {
+      day.style.color= taskColor;
+    } else {
+      day.style.color = "rgb(119,119,119)";
+    }
+  }
+}
+let days = document.querySelectorAll(".day");
+for (let day of days) {
+  day.addEventListener("click", addTaskToDay);
+}
