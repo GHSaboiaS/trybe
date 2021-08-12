@@ -111,3 +111,12 @@ function addTask(task) {
 }
 addTask("Passear com o Tobias");
 
+// 8
+function addLegend(color) {
+  let divTask = document.createElement("div");
+  let divMyTasks = document.querySelector("div.my-tasks")
+  divTask.classList.add("task");
+  divTask.style.background = color;
+  divMyTasks.appendChild(divTask);
+}
+addLegend("yellow");
