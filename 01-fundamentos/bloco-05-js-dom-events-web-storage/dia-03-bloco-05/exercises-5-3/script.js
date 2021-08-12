@@ -88,13 +88,13 @@ fridayButton.addEventListener("click", changeFridayText);
 // 6
 function enlargeText(originEvent) {
   let element = originEvent.target;
-  let elementFontSize = element.style.fontSize
-  element.style.fontSize = "30px";
+  let elementFontSize = element.style.fontSize;
+  elementFontSize = "30px";
 }
 function reduceText(originEvent) {
   let element = originEvent.target;
-  let elementFontSize = element.style.fontSize
-  element.style.fontSize = "20px";
+  let elementFontSize = element.style.fontSize;
+  elementFontSize = "20px";
 }
 let daysList = document.querySelectorAll(".day");
 for (let day of daysList) {
@@ -120,3 +120,17 @@ function addLegend(color) {
   divMyTasks.appendChild(divTask);
 }
 addLegend("yellow");
+
+// 9
+function selectTask(originEvent) {
+  let selectedElement = originEvent.target;
+  if (selectedElement.classList.contains("task-selected")) {
+    console.log("removing");
+    selectedElement.classList.remove("task-selected");
+  } else {
+    console.log("adding");
+    selectedElement.classList.add("task-selected");
+  }  
+}
+let divTask = document.querySelector(".task");
+divTask.addEventListener("click", selectTask)
