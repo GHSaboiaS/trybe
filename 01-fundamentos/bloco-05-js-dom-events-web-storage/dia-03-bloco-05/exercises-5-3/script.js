@@ -151,3 +151,51 @@ let days = document.querySelectorAll(".day");
 for (let day of days) {
   day.addEventListener("click", addTaskToDay);
 }
+
+// Bonus
+function addAppointment(originEvent) {
+  let inputText = document.querySelector("#task-input").value;
+  let taskList = document.querySelector(".task-list");
+  let newTask = document.createElement("li");
+  let keyPressed = originEvent.which || originEvent.keyCode;
+  newTask.innerText = inputText;
+  if (keyPressed === 1 || keyPressed === 13) {
+    if (inputText === "") {
+      alert("Erro: adicione um compromisso.");
+      return;
+    } else {
+      taskList.appendChild(newTask);
+      document.querySelector("#task-input").value = "";
+      newTask.addEventListener("click", selectAppointment);
+      return;
+    }
+  }
+}
+let addButton = document.querySelector(".btn-add");
+let inputBox = document.querySelector("#task-input");
+inputBox.addEventListener("keydown", addAppointment)
+addButton.addEventListener("click", addAppointment);
+
+// Bonus - remove appointment
+function selectAppointment(originEvent) {
+  let selectedAppointment = originEvent.target;
+  if (selectedAppointment.classList.contains("selected")) {
+    selectedAppointment.classList.remove("selected");
+    selectedAppointment.style.fontSize = "18px";
+  } else {
+    selectedAppointment.classList.add("selected");
+    selectedAppointment.style.fontSize = "24px";
+  }
+}
+function removeAppointment() {
+  let selectedTasks = document.querySelectorAll(".selected");
+  if (selectedTasks.length === 0) {
+    alert("Erro: selecione um compromisso.");
+  } else {
+    for (let task of selectedTasks) {
+      task.remove();
+    }
+  }
+}
+let removeButton = document.querySelector(".btn-remove");
+removeButton.addEventListener("click", removeAppointment);

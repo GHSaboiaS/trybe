@@ -12,7 +12,7 @@ button {
     margin: 20px;
 }
   
-#btn-add {
+.btn-add, .btn-remove {
     margin: 0;
 }
   
@@ -125,10 +125,12 @@ label {
   
 .task-list {
     margin-top: 20px;
+    text-align: left;
 }
   
 .task-list-container {
-    display: inline-block;
+    display: block;
+    margin-left: 93px;
 }
   
 .task-list-container ul {
@@ -139,6 +141,10 @@ label {
     font-weight: 500;
     letter-spacing: 2px;
     vertical-align: middle;
+}
+
+.task-list-container ul li {
+    list-style: square;
 }
   
 .week-days-container {
