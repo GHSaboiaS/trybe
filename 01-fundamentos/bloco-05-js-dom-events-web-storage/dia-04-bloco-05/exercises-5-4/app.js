@@ -5,6 +5,29 @@ let spacing = document.querySelector("#spacing");
 let fontFamily = document.querySelector("#fontFamily");
 let body = document.querySelector("body");
 
+window.onload = function() {
+    addStyle();
+    initialRenderization();
+}
+
+function addStyle() {
+    let userPreferencesDict = JSON.parse(localStorage.getItem("userPreferences"));
+    console.log(userPreferencesDict);
+}
+
+function initialRenderization() {
+    if (localStorage.getItem("userPreferences") === null) {
+        localStorage.setItem("userPreferences", JSON.stringify(
+            userDict = {
+            background: [],
+            textColor: [],
+            fontSize: [],
+            spacing: [],
+            fontFamily: [],
+        }));
+    }
+}
+
 function getValue(originEvent) {
     let inputBackground = background.value;
     let inputTextColor = textColor.value;
@@ -14,8 +37,9 @@ function getValue(originEvent) {
     let keyPressed = originEvent.which || originEvent.keyCode;
     let element = originEvent.target;
     if (keyPressed === 13) {
-        let userInput = element.value;
-        addInputToLocalStorage(userInput);
+        let elementId = element.id;
+        let elementValue = element.value;
+        addInputToDataStructure(elementId, elementValue);
         if (element.id === "background") {
             body.style.background = inputBackground;
         } else if (element.id === "textColor") {
@@ -38,39 +62,15 @@ fontSize.addEventListener("keydown", getValue);
 spacing.addEventListener("keydown", getValue);
 fontFamily.addEventListener("keydown", getValue);
 
-function initialRenderization() {
-    if (localStorage.getItem("userData") === null) {
-        localStorage.setItem("userData", JSON.stringify([]));
-    } else {
-        let userDataList = JSON.parse(localStorage.getItem("userData"));
-        // console.log("userDataList: ", userDataList)
-    }
+function addInputToDataStructure(elementId, elementValue) {
+    let userPreferencesDict = JSON.parse(localStorage.getItem("userPreferences"));
+    userPreferencesDict[elementId].push(elementValue);
+    addDataToLocalStorage()
 }
 
-function addInputToLocalStorage(input) {
-    let oldList = JSON.parse(localStorage.getItem("userData"));
-    let userInput = input;
-    oldList.push(userInput);
-    localStorage.setItem("userData", JSON.stringify(oldList));
+function addDataToLocalStorage() {
+    let oldDict = JSON.parse(localStorage.getItem("userPreferences"));
+    userPreferencesDict[elementId].push(elementValue);
+    localStorage.setItem("userPreferences", JSON.stringify(oldDict));
+    console.log(userPreferencesDict)
 }
-
-function addStyle() {
-    let userDataList = JSON.parse(localStorage.getItem("userData"));
-    let listLength = userDataList.length;
-    let userBackground = userDataList[listLength - 1];
-    body.style.background = userBackground;
-}
-
-window.onload = function() {
-    initialRenderization();
-    addStyle();
-}
-// console.log(JSON.parse(random));
-
-// let random = {
-//     name: "Google",
-//     age: 23,
-// }
-
-// funcionando para o background
-// ideia: guardar no local storage como dicionário? atributo: lista de valores
