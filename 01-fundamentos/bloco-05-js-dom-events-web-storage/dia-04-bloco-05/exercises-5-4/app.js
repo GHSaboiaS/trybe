@@ -6,13 +6,8 @@ let fontFamily = document.querySelector("#fontFamily");
 let body = document.querySelector("body");
 
 window.onload = function() {
-    addStyle();
     initialRenderization();
-}
-
-function addStyle() {
-    let userPreferencesDict = JSON.parse(localStorage.getItem("userPreferences"));
-    console.log(userPreferencesDict);
+    addStyle();
 }
 
 function initialRenderization() {
@@ -28,27 +23,44 @@ function initialRenderization() {
     }
 }
 
+function addStyle() {
+    let userPreferencesDict = JSON.parse(localStorage.getItem("userPreferences"));
+    let backgroundLength = userPreferencesDict.background.length - 1;
+    let textColorLength = userPreferencesDict.textColor.length - 1;
+    let fontSizeLength = userPreferencesDict.fontSize.length - 1;
+    let spacingLength = userPreferencesDict.spacing.length - 1;
+    let fontFamilyLength = userPreferencesDict.fontFamily.length - 1;
+    body.style.background = userPreferencesDict.background[backgroundLength];
+    body.style.color = userPreferencesDict.textColor[textColorLength];
+    body.style.fontSize = userPreferencesDict.fontSize[fontSizeLength];
+    body.style.wordSpacing = userPreferencesDict.spacing[spacingLength];
+    body.style.fontFamily = userPreferencesDict.fontFamily[fontFamilyLength];
+}
+
+
+
 function getValue(originEvent) {
+    let element = originEvent.target;
+    let elementId = element.id;
+    let elementValue = element.value;
     let inputBackground = background.value;
     let inputTextColor = textColor.value;
     let inputFontSize = fontSize.value;
     let inputSpacing = spacing.value;
     let inputFontFamily = fontFamily.value;
     let keyPressed = originEvent.which || originEvent.keyCode;
-    let element = originEvent.target;
     if (keyPressed === 13) {
-        let elementId = element.id;
-        let elementValue = element.value;
         addInputToDataStructure(elementId, elementValue);
-        if (element.id === "background") {
+        // document.body.style.setProperty('--name', value);
+        if (elementId === "background") {
             body.style.background = inputBackground;
-        } else if (element.id === "textColor") {
+        } else if (elementId === "textColor") {
             body.style.color = inputTextColor;
-        } else if (element.id === "fontSize") {
+        } else if (elementId === "fontSize") {
             body.style.fontSize = inputFontSize;
-        } else if (element.id === "spacing") {
+        } else if (elementId === "spacing") {
             body.style.wordSpacing = inputSpacing;
-        } else if (element.id === "fontFamily") {
+        } else if (elementId === "fontFamily") {
             body.style.fontFamily = inputFontFamily;
         } else {
             console.log(element);
@@ -65,12 +77,9 @@ fontFamily.addEventListener("keydown", getValue);
 function addInputToDataStructure(elementId, elementValue) {
     let userPreferencesDict = JSON.parse(localStorage.getItem("userPreferences"));
     userPreferencesDict[elementId].push(elementValue);
-    addDataToLocalStorage()
+    addDataToLocalStorage(userPreferencesDict)
 }
 
-function addDataToLocalStorage() {
-    let oldDict = JSON.parse(localStorage.getItem("userPreferences"));
-    userPreferencesDict[elementId].push(elementValue);
-    localStorage.setItem("userPreferences", JSON.stringify(oldDict));
-    console.log(userPreferencesDict)
+function addDataToLocalStorage(userDict) {
+    localStorage.setItem("userPreferences", JSON.stringify(userDict));
 }
