@@ -1,0 +1,96 @@
+:root {
+
+  --user-input: 5;
+
+  --user-input-px: 5px;
+
+  --grid-size: 0;
+
+  --grid-size-px: 0;
+
+  --second-color: 0;
+
+  --third-color: 0;
+
+  --fourth-color: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Franklin-Gothic-Medium, Arial-Narrow, Arial, sans-serif;
+  background-color: burlywood;
+}
+
+#title {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(2, 20, 200);
+  color: white;
+}
+
+#color-palette {
+  text-align: center;
+  margin: 20px;
+  height: 52px;
+}
+
+.color {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.color:nth-of-type( 1 ) {
+  background-color: black;
+}
+
+.color:nth-of-type( 2 ) {
+  background-color: var(--second-color);
+}
+
+.color:nth-of-type( 3 ) {
+  background-color: var(--third-color);
+}
+
+.color:nth-of-type( 4 ) {
+  background-color: var(--fourth-color);
+}
+
+.input {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#board-size {
+  height: 50px;
+  margin: 20px 5px 40px;
+}
+
+.btn {
+  padding: 5px;
+  width: 60px;
+  margin: 20px 5px 40px;
+}
+
+#pixel-board {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: black;
+  display: grid;
+  max-width: var(--grid-size-px);
+  max-height: var(--grid-size-px);
+  grid-template-columns: repeat(var(--user-input), var(--user-input-px));
+  grid-template-rows: repeat(var(--user-input), var(--user-input-px));
+  margin: 0 auto;
+}
+
+.pixel {
+  border: 1px solid black;
+  width: var(--user-input-px);
+  height: var(--user-input-px);
+  background-color: white;
+}
