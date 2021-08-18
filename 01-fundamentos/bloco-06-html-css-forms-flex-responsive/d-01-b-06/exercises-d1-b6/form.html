@@ -5,16 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <form action="" method="GET">
     <fieldset id="user-info-fieldset">
       <legend>User Info</legend>
-      <div class="input-container"></div>
+      <div class="input-container">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" required maxlength="40" autocomplete="off">
       </div>
-      <div class="input-container"></div>
+      <div class="input-container">
         <label for="email">Email: </label>
         <input type="email" name="email" id="email" required maxlength="50">
       </div>
@@ -30,40 +31,31 @@
         <label for="city">City: </label>
         <input type="text" name="city" id="city" required maxlength="28">
       </div>
-      <select name="state" id="state">
-        <option value="ac">Acre</option>
-        <option value="al">Alagos</option>
-        <option value="ap">Amapá</option>
-        <option value="am">Amazonas</option>
-        <option value="ba">Bahia</option>
-        <option value="ce">Ceará</option>
-        <option value="es">Espírito Santo</option>
-        <option value="go">Goiás</option>
-        <option value="ma">Maranhão</option>
-        <option value="mt">Mato Grosso</option>
-        <option value="ms">Mato Grosso do Sul</option>
-        <option value="mg">Minas Gerais</option>
-        <option value="pa">Pará</option>
-        <option value="pb">Paraíba</option>
-        <option value="pr">Paraná</option>
-        <option value="pe">Pernambuco</option>
-        <option value="pi">Piauí</option>
-        <option value="rj">Rio de Janeiro</option>
-        <option value="rn">Rio Grande do Norte</option>
-        <option value="rs">Rio Grande do Sul</option>
-        <option value="ro">Rondônia</option>
-        <option value="rr">Roraima</option>
-        <option value="sc">Santa Catarina</option>
-        <option value="sp">São Paulo</option>
-        <option value="se">Sergipe</option>
-        <option value="to">Tocantins</option>
-        <option value="df">Distrito Federal</option>
-      </select>
-    </fieldset>
-
-    <fieldset id="last-job-fieldset">
-      <legend>Last Job Info</legend>
+      <div class="input-container">
+        <label for="state">State: </label>
+        <select name="state" id="state"></select>
+      </div>
+      <div class="radio-container">
+        <input type="radio" name="type" id="house" value="house">
+        <label for="house">House</label>
+      </div>
+      <div class="radio-container">
+        <input type="radio" name="type" id="apartment" value="apartment">
+        <label for="apartment">Apartment</label>
+      </div>
     </fieldset>
   </form>
+
+  <form action="" method="GET">
+    <fieldset id="last-job-fieldset">
+      <legend>Last Job Info</legend>
+      <div class="input-container">
+        <label for="resume">CV summary: </label>
+        <textarea name="resume" id="resume" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+  </form>
+  
+  <script src="script.js"></script>
 </body>
 </html>
