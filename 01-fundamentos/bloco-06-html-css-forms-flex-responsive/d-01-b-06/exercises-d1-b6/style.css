@@ -6,9 +6,11 @@
 form {
   width: 75%;
   margin: 50px auto;
+  background-color: aquamarine;
 }
 
 fieldset {
+  margin: 20px 0;
   padding: 0px 10px 10px 10px;
 }
 
