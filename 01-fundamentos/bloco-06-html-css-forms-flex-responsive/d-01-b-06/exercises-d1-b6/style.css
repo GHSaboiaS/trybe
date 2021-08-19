@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 75%;
+  margin: 50px auto;
+  background-color: aquamarine;
+}
+
+fieldset {
+  margin: 20px 0;
+  padding: 0px 10px 10px 10px;
+}
+
+.input-container {
+  margin: 12px 0;
+}
+
+.input-container input {
+  width: 100%;
+}
+
+.input-container textarea {
+  width: 100%;
+}
+
+.radio-container {
+  margin: 2px;
+}
