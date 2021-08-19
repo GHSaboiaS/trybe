@@ -5,19 +5,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
+  <!-- JQuery -->
   <script src="jquery-3.6.0.min.js"></script>
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
   <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+
+  <!-- DatePickerX -->
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Form</h1>
-  <form action="" method="GET" enctype="multipart/form-data">
-  <div>
-    <label for="full-name">Full name: </label>
-    <input type="text" name="name" id="full-name">
-  </div>
+  
+
+  <form action="" method="GET" id="main-form">
+    <h1>Forms</h1>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input class="form-control" type="text" name="name" id="name" required maxlength="40">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" required maxlength="50">
+      </div>
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF:</label>
+        <input class="form-control" type="text" name="cpf" id="cpf" required maxlength="11">
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address:</label>
+        <input class="form-control" type="text" name="address" id="address" required maxlength="200">
+      </div>
+      <div class="mb-3">
+        <label for="city" class="form-label">City:</label>
+        <input class="form-control" type="text" name="city" id="city" required maxlength="28">
+      </div>
+      <div class="mb-3">
+        <label for="state" class="form-label">State:</label>
+        <select id="dataListOptions" class="form-select">
+          <option selected>Click to open</option>
+          <option value="Minas Gerais">MG</option>
+          <option value="Rio de Janeiro">RJ</option>
+          <option value="Espírito Santo">ES</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type" id="house" checked>
+        <label for="house" class="form-check-label">House</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type" id="apartment">
+        <label for="apartment" class="form-check-label">Apartment</label>
+      </div>
+
+      <!-- <legend>Previous Job Info</legend>
+      <div class="mb-3">
+        <label for="resume">CV summary:</label>
+        <textarea name="resume" id="resume" cols="30" rows="8" maxlength="1000" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="job-title">Title:</label>
+        <input type="text" name="job-title" id="job-title" required>
+      </div>
+      <div class="mb-3">
+        <label for="job-description">Description:</label>
+        <input type="text" name="job-description" id="job-description" required>
+      </div>
+      <div class="mb-3">
+        <label for="start-date">Start date:</label>
+        <input type="text" name="start-date" id="start-date" required>
+      </div> -->
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-primary">Click to submit info</button>
+      </div>
   </form>
-
-
 </body>
 </html>
