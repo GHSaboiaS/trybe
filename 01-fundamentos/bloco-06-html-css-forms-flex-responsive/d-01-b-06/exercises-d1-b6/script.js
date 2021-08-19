@@ -15,6 +15,8 @@ const jobDescription = document.getElementById('job-description');
 const startDate = document.getElementById('start-date');
 const button = document.querySelector('button');
 
+const userData = document.querySelector('#user-data');
+
 for (let i = 0; i < states.length; i += 1) {
   const newOption = document.createElement('option');
   newOption.innerText = states[i];
@@ -24,6 +26,8 @@ for (let i = 0; i < states.length; i += 1) {
 function getRadioValues() {
   if (!type[0].checked && !type[1].checked) {
     return false;
+  } else {
+
   }
 }
 
@@ -49,17 +53,32 @@ function getStartDate(originEvent) {
   checkUserInfo();
 }
 
-function createUserDiv() {
+function createUserObj() {
+  for (let i = 0; i < type.length; i += 1) {
+    if (type[i].checked) {
+      const shelter = type[i];
+      const userObj = {'name': userName.value, 'email': email.value, 'cpf': cpf.value, 'address': address.value, 'city': city.value, 'state': state.value, 'shelter': shelter.value, 'resume': resume.value, 'jobTitle': jobTitle.value, 'jobDescription': jobDescription.value, 'startDate': startDate.value};
+      createUserDiv(userObj);
+    }
+  }
+}
+
+function createUserDiv(userObj) {
   const userDataDiv = document.createElement('div');
-  // montar div com dados do usuário. Pensei em criar um array com as respostas (exceção para o type), e ir criando <p> para cada um, adicionando innerText usando loop nesse array.
+  for (let key = 0; key < Object.keys(userObj).length; key += 1) {
+    const newItem = document.createElement('p');
+    newItem.innerText = `${Object.keys(userObj)[key]}: ${userObj[Object.keys(userObj)[key]]}`;
+    userDataDiv.appendChild(newItem);
+  }
+  userData.appendChild(userDataDiv);
 }
 
 function checkUserInfo() {
   const typeCheck = getRadioValues();
-  if (!userName.value || !email.value || !cpf.value || !address.value || !city.value || !state.value || typeCheck || !resume.value || !jobTitle.value || !jobDescription.value || !startDate) {
+  if (!userName.value || !email.value || !cpf.value || !address.value || !city.value || !state.value || typeCheck || !resume.value || !jobTitle.value || !jobDescription.value || !startDate.value) {
     alert('All fields are required.')
   } else {
-    createUserDiv(); 
+    createUserObj(); 
   }
 }
 
