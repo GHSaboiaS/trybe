@@ -1,10 +1,17 @@
-#container {
-  display: flex;
-  border: 10px solid black;
+.box {
+  color: #9069EF;
+  background-color: rgb(243, 243, 243);
+  border: 2px solid #232525;
+  font-size: 50px;
+  height: 60px;
+  margin: 10px 5px;
+  text-align: center;
+  width: 10%;
 }
 
-p {
-  border: 1px solid black;
-  padding: 0px 2px;
-  margin: 0px;
+.box-container {
+  background-color: #0fa36b;
+  display: flex;
+  /* flex-flow: column-reverse; */
+  justify-content: space-evenly;
 }
