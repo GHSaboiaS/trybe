@@ -3,7 +3,7 @@ body {
 }
 
 div {
-  margin: 0px 15px;
+  margin: 0px  10px;
 }
 
 .menu {
@@ -12,9 +12,53 @@ div {
   justify-content: space-between;
   height: 50px;
   align-items: center;
+  padding: 10px 20px;
+  color: #fff;
 }
 
-.user {
+.links {
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.links, .date {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.links div {
+  border: 1px solid black;
+}
+
+.date {
+  border: 1px solid yellow;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(247, 247, 247);
+}
+
+img {
+  max-width: 300px;
+  max-height: 200px;
+  background-color: rgb(247, 247, 247);
+}
+
+#ethereum {
+  width: 100%;
+}
+
+.crypto-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crypto {
+  max-height: 30px;
+  max-width: 30px;
+  padding: 5px;
 }
