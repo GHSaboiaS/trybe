@@ -69,13 +69,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 :ballot_box_with_check: 5-7: _Projeto Bônus - Adivinhe a cor_
 
 
-### Bloco 6: HTML & CSS avançado
+### Bloco 6: [HTML & CSS avançado](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/bloco-06-html-css-forms-flex-responsive)
 
 :ballot_box_with_check: 6-1: _HTML & CSS - Forms_
 
-:black_large_square: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+:ballot_box_with_check: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 
-:black_large_square: 6-3: _CSS Flexbox - Part 1_
+:ballot_box_with_check: 6-3: _CSS Flexbox - Part 1_
 
 :black_large_square: 6-4: _CSS Flexbox - Part 2_
 
@@ -508,13 +508,13 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :ballot_box_with_check: 5-7: _Bonus Project - Guess the Color_
 
 
-### Part 6: HTML & CSS avançado
+### Part 6: [Advanced HTML & CSS](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/bloco-06-html-css-forms-flex-responsive)
 
 :ballot_box_with_check: 6-1: _HTML & CSS - Forms_
 
-:black_large_square: 6-2: _JavaScript libraries and CSS Frameworks_
+:ballot_box_with_check: 6-2: _JavaScript libraries and CSS Frameworks_
 
-:black_large_square: 6-3: _CSS Flexbox - Part 1_
+:ballot_box_with_check: 6-3: _CSS Flexbox - Part 1_
 
 :black_large_square: 6-4: _CSS Flexbox - Part 2_
 
@@ -868,5 +868,3 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :black_large_square: 38-3: _Stacks_
 
 :black_large_square: 38-4: _Project: TING - Trybe Is Not Google_
-[3~'
-
