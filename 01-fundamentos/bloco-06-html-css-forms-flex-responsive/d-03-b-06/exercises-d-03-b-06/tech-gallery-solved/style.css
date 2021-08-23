@@ -48,9 +48,7 @@ header a {
 .images {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 10px auto 10px auto;
-  min-height: auto;
 }
 
 .images-container {
