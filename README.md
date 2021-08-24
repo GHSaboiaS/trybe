@@ -489,7 +489,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :ballot_box_with_check: 4-5: _Project - Playground Functions_
 
 
-### Part 5: [Javascript: DOM, Events e Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
+### Part 5: [Javascript: DOM, Events and Web Storage](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-05-js-dom-events-web-storage)
 
 :ballot_box_with_check: 5-1: _JavaScript - DOM and selectors_
 
@@ -518,7 +518,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :black_large_square: 6-4: _CSS Flexbox - Part 2_
 
-:black_large_square: 6-5: _CSS Responsive - Mobile First_
+:black_large_square: 6-5: _Responsive CSS - Mobile First_
 
 :black_large_square: 6-6: _Project - Trybewarts_
 
