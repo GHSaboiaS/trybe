@@ -38,6 +38,7 @@ figcaption {
 }
 
 @media screen and (min-width: 768px) {
+
   body {
     background-color: aquamarine;
     margin: 15px;
@@ -81,4 +82,33 @@ figcaption {
   img {
     width: 100%;
   }
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    background-color: bisque;
+    margin: 20px;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;  
+    text-align: center;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  figure {
+    width: 33.333%;
+  }
+
 }
