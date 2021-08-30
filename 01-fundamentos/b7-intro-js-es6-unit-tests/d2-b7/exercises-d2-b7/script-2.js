@@ -60,3 +60,45 @@ function getValueByNumber(object, position) {
 // Verifies if key:value exists in object
 const verifyPair = (object, key, value) => (object[key] === value) ? true : false;
 // console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// Counts number of math students
+function mathStudents(object) {
+  const keys = Object.keys(object);
+  let counter = 0;
+  for (let i in keys) {
+    if (object[keys[i]].materia === 'Matemática') {
+      counter += object[keys[i]].numeroEstudantes;
+    }
+  }
+  return counter
+}
+// console.log(mathStudents(allLessons));
+
+
+
+let teacherStudents = 0;
+const teacherClasses = [];
+// Populates teacher array
+function getTeacherData(teacherObj, teacher, students, subject) {
+  teacherClasses.push(subject);
+  teacherStudents += students;
+  teacherObj.professor = teacher;
+  teacherObj.estudantes = teacherStudents
+  teacherObj.aulas = teacherClasses;
+  return teacherObj
+}
+
+// Selects teacher data
+function selectTeacher(object, teacher) {
+  let teacherObj = {};
+  for (let key in object) {
+    const lesson = object[key];
+    for (let innerKey in lesson) {
+      if (lesson[innerKey] === teacher) {
+        teacherObj = getTeacherData(teacherObj, teacher, lesson.numeroEstudantes, lesson.materia);
+      }
+    }
+  }
+  return teacherObj;
+}
+console.log(selectTeacher(allLessons, 'Maria Clara'));
