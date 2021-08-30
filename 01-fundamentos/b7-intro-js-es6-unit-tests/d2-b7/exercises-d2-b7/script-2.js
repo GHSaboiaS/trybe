@@ -74,8 +74,6 @@ function mathStudents(object) {
 }
 // console.log(mathStudents(allLessons));
 
-
-
 let teacherStudents = 0;
 const teacherClasses = [];
 // Populates teacher array
