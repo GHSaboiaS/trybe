@@ -97,3 +97,23 @@ assert.strictEqual(myFizzBuzz(8), 8, 'Should return 8');
 
 // Test 5
 assert.ok(!myFizzBuzz('hey'), 'Should return false');
+
+// Section 5
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2, 'Should be equal');
+assert.notDeepStrictEqual(obj1, obj3, 'Should be different');
+assert.notDeepStrictEqual(obj2, obj3, 'Should be different');
