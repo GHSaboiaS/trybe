@@ -39,7 +39,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
   
 ### Bloco 4: [Introdução - JavaScript e Lógica](https://github.com/GHSaboiaS/trybe/tree/master/01-fundamentos/bloco-04-javascript-logica)
 
-:ballot_box_with_check:  4-1: _JavaScript - Primeiros passos_
+:ballot_box_with_check: 4-1: _JavaScript - Primeiros passos_
 
 :ballot_box_with_check: 4-2: _JavaScript - Array e loop For_
 
@@ -58,7 +58,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 5-3: _JavaScript - Eventos_
 
-:ballot_box_with_check:  5-4: _JavaScript - Web Storage_
+:ballot_box_with_check: 5-4: _JavaScript - Web Storage_
 
 :ballot_box_with_check: 5-5: _Projeto: Arte com Pixels_
 
@@ -77,29 +77,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 6-3: _CSS Flexbox - Part 1_
 
-:black_large_square: 6-4: _CSS Flexbox - Part 2_
+:ballot_box_with_check: 6-4: _CSS Flexbox - Part 2_
 
-:black_large_square: 6-5: _CSS Responsivo - Mobile First_
+:ballot_box_with_check: 6-5: _CSS Responsivo - Mobile First_
 
-:black_large_square: 6-6: _Projeto - Trybewarts_
-
-
-### Bloco 7: JavaScript ES6 & Testes Unitários
-
-:black_large_square: 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-
-:black_large_square: 7-2: _JavaScript ES6 - Objects_
-
-:black_large_square: 7-3: _Testes unitários em JavaScript_
-
-:black_large_square: 7-4: _Projeto - JavaScript Testes Unitários_
+:ballot_box_with_check: 6-6: _Projeto - Trybewarts_
 
 
-### Bloco 8: Higher Order Functions do JavaScript ES6
+### Bloco 7: [JavaScript ES6 & Testes Unitários](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/b7-intro-js-es6-unit-tests)
 
-:black_large_square:8-1: _JavaScript ES6 - Introdução Higher Order Functions_
+:ballot_box_with_check: 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 
-:black_large_square: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+:ballot_box_with_check: 7-2: _JavaScript ES6 - Objects_
+
+:ballot_box_with_check: 7-3: _Testes unitários em JavaScript_
+
+:ballot_box_with_check: 7-4: _Projeto - JavaScript Testes Unitários_
+
+
+### Bloco 8: [Higher Order Functions do JavaScript ES6](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/b8-higher-order-functions-js-es6)
+
+:ballot_box_with_check: 8-1: _JavaScript ES6 - Introdução Higher Order Functions_
+
+:ballot_box_with_check: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 
 :black_large_square: 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 
@@ -495,9 +495,9 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 5-2: _JavaScript - Working with elements_
 
-:ballot_box_with_check:5-3: _JavaScript - Events_
+:ballot_box_with_check: 5-3: _JavaScript - Events_
 
-:ballot_box_with_check:  5-4: _JavaScript - Web Storage_
+:ballot_box_with_check: 5-4: _JavaScript - Web Storage_
 
 :ballot_box_with_check: 5.5: _Project: Art with Pixels_
 
@@ -516,30 +516,29 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 6-3: _CSS Flexbox - Part 1_
 
-:black_large_square: 6-4: _CSS Flexbox - Part 2_
+:ballot_box_with_check: 6-4: _CSS Flexbox - Part 2_
 
-:black_large_square: 6-5: _Responsive CSS - Mobile First_
+:ballot_box_with_check: 6-5: _Responsive CSS - Mobile First_
 
-:black_large_square: 6-6: _Project - Trybewarts_
-
-
-### Part 7: JavaScript ES6 & Unit testing
+:ballot_box_with_check: 6-6: _Project - Trybewarts_
 
 
-:black_large_square: 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
+### Part 7: [JavaScript ES6 & Unit testing](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/b7-intro-js-es6-unit-tests)
 
-:black_large_square: 7-2: _JavaScript ES6 - Objects_
+:ballot_box_with_check: 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
 
-:black_large_square: 7-3: _Unit testing - JavaScript_
+:ballot_box_with_check: 7-2: _JavaScript ES6 - Objects_
 
-:black_large_square: 7-4: _Project - JavaScript Unit testing_
+:ballot_box_with_check: 7-3: _Unit testing - JavaScript_
+
+:ballot_box_with_check: 7-4: _Project - JavaScript Unit testing_
 
 
-### Part 8: Higher Order Functions do JavaScript ES6
+### Part 8: [Higher Order Functions do JavaScript ES6](https://github.com/ghsaboias/trybe/tree/master/01-fundamentos/b8-higher-order-functions-js-es6)
 
-:black_large_square:8-1: _JavaScript ES6 - Introduction to Higher Order Functions_
+:ballot_box_with_check: 8-1: _JavaScript ES6 - Introduction to Higher Order Functions_
 
-:black_large_square: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+:ballot_box_with_check: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 
 :black_large_square: 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
 
