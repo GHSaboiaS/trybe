@@ -6,6 +6,6 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-people.sort((a, b) => a.age - b.age)
+// people.sort((a, b) => a.age - b.age)
 
-console.log(people);
+// console.log(people);
