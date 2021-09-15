@@ -14,13 +14,8 @@
 // console.log(y); // 2
 // console.log(z); // 0
 
-const getNationality = ({ firstName, nationality }) => {
-  if (nationality) {
-    return `${firstName} is ${nationality}`;
-  } else {
-    return `${firstName} is ${nationality = 'Brazilian'}`;
-  }
-}
+const getNationality = ({ firstName, nationality = 'Brazilian'}) => `${firstName} is ${nationality}`;
+
 
 const person = {
   firstName: 'João',
