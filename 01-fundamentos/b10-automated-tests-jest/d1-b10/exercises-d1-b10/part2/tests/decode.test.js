@@ -1,4 +1,4 @@
-const decode = require('./decode.js')
+const decode = require('../src/decode.js')
 
 describe('Testing function decode', () => {
   test('Test if encode is a function', () => {
