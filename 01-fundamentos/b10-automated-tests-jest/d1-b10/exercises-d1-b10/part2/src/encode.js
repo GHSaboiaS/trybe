@@ -10,6 +10,4 @@ function encode(text) {
   return newText
 }
 
-console.log(encode('odhfaes'))
-
 module.exports = encode
