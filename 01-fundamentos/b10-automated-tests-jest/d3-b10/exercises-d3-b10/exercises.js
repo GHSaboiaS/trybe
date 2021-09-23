@@ -2,4 +2,16 @@ const generateRandom = () => {
   return Math.round(Math.random() * 100)
 }
 
-module.exports = { generateRandom }
+const first = (string) => {
+  return string.toUpper()
+}
+
+const second = (string) => {
+  return string[0]
+}
+
+const third = (string1, string2) => {
+  return string1 + string2
+}
+
+module.exports = { generateRandom, first, second, third }

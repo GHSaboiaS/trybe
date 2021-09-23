@@ -39,4 +39,21 @@ describe('Testing generateRandom', () => {
     expect(mockGenRand21).toHaveBeenCalled()
     expect(mockGenRand21).toHaveBeenCalledTimes(1)
   })
+
+  it('Exercise 4', () => {
+    jest.spyOn(exercises, 'first').mockImplementationOnce((string) => string.toLowerCase())
+    
+    expect(exercises.first('AAA')).toBe('aaa')
+    expect(exercises.first).toHaveBeenCalledTimes(1)
+
+    jest.spyOn(exercises, 'second').mockImplementationOnce((string) => string[string.length - 1])
+
+    expect(exercises.second('Guilherme')).toBe('e')
+    expect(exercises.second).toHaveBeenCalledTimes(1)
+
+    jest.spyOn(exercises, 'third').mockImplementationOnce((s1, s2, s3) => s1 + s2 + s3)
+
+    expect(exercises.third('eu', 'tu', 'nois')).toBe('eutunois')
+    expect(exercises.third).toHaveBeenCalledTimes(1)
+  })
 })
