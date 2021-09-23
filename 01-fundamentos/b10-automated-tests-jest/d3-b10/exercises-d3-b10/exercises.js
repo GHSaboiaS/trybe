@@ -3,7 +3,7 @@ const generateRandom = () => {
 }
 
 const first = (string) => {
-  return string.toUpper()
+  return string.toUpperCase()
 }
 
 const second = (string) => {

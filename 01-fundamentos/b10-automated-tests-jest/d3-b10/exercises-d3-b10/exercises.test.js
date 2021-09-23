@@ -56,4 +56,19 @@ describe('Testing generateRandom', () => {
     expect(exercises.third('eu', 'tu', 'nois')).toBe('eutunois')
     expect(exercises.third).toHaveBeenCalledTimes(1)
   })
+
+  it('Exercise 5', () => {
+    jest.spyOn(exercises, 'first').mockImplementationOnce((string) => string.toLowerCase())
+
+    expect(exercises.first('GuiLhermE')).toBe('guilherme')
+    expect(exercises.first).toHaveBeenCalledTimes(2)
+
+    exercises.first.mockRestore()
+
+    expect(exercises.first('gui')).toBe('GUI')
+  })
+
+  it('Exercise 6', () => {
+    
+  })
 })
