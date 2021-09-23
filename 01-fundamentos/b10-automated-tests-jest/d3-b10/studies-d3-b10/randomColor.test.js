@@ -6,7 +6,24 @@ function randomRgbColor() {
 }
 
 test("#randomRgbColor", () => {
-  // testando se a função foi chamada
-  randomRgbColor();
-  expect(service.randomRgbColor).toHaveBeenCalled();
+  // testing how many times function has been called, and what it returns
+  randomRgbColor = jest
+    .fn()
+    // third return
+    .mockReturnValue('default value')
+    // first return
+    .mockReturnValueOnce('first call')
+    // second return
+    .mockReturnValueOnce('second call');
+
+  expect(randomRgbColor).toHaveBeenCalledTimes(0);
+
+  expect(randomRgbColor()).toBe("first call");
+  expect(randomRgbColor).toHaveBeenCalledTimes(1);
+
+  expect(randomRgbColor()).toBe("second call");
+  expect(randomRgbColor).toHaveBeenCalledTimes(2);
+
+  expect(randomRgbColor()).toBe("default value");
+  expect(randomRgbColor).toHaveBeenCalledTimes(3);
 });
