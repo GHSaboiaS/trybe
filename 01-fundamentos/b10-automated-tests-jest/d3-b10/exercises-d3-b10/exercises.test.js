@@ -69,6 +69,17 @@ describe('Testing generateRandom', () => {
   })
 
   it('Exercise 6', () => {
-    
+    const newDog = jest
+      .spyOn(exercises, 'getDog')
+      .mockImplementation((a) => new Promise((resolve, reject) => {
+        if (a) {
+          return resolve('request success')
+        }
+
+        return reject('request failed')
+      }))
+
+    expect(newDog('a')).resolves.toBe('request success')
+    expect(newDog()).rejects.toBe('request failed')
   })
 })
