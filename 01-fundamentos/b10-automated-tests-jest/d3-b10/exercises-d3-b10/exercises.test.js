@@ -67,19 +67,27 @@ describe('Testing generateRandom', () => {
 
     expect(exercises.first('gui')).toBe('GUI')
   })
+})
 
-  it('Exercise 6', () => {
-    const newDog = jest
-      .spyOn(exercises, 'getDog')
-      .mockImplementation((a) => new Promise((resolve, reject) => {
-        if (a) {
-          return resolve('request success')
-        }
+describe('Testing getDog', () => {
+  exercises.getDog = jest.fn();
+  afterEach(exercises.getDog.mockReset);
 
-        return reject('request failed')
-      }))
+  it('Resolving', async () => {
+    exercises.getDog.mockResolvedValue("request sucess");
 
-    expect(newDog('a')).resolves.toBe('request success')
-    expect(newDog()).rejects.toBe('request failed')
+    exercises.getDog();
+    expect(exercises.getDog).toHaveBeenCalled();
+    expect(exercises.getDog).toHaveBeenCalledTimes(1);
+    await expect(exercises.getDog()).resolves.toBe("request sucess");
+    expect(exercises.getDog).toHaveBeenCalledTimes(2);
+  })
+
+  it('Rejecting', async () => {
+    exercises.getDog.mockRejectedValue("request failed");
+
+    expect(exercises.getDog).toHaveBeenCalledTimes(0);
+    await expect(exercises.getDog()).rejects.toMatch("request failed");
+    expect(exercises.getDog).toHaveBeenCalledTimes(1);
   })
 })
