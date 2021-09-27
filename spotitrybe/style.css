@@ -75,4 +75,24 @@ header .logo-title {
 
 .genres-cards .genre img {
   width: 160px;
+  margin-bottom: 20px;
+}
+
+.text-card {
+  background-color: var(--cinza2);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.playlists-cards, .tracks-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-card:hover {
+  background-color: var(--cinza1);
+  transition: 0.1s;
 }
