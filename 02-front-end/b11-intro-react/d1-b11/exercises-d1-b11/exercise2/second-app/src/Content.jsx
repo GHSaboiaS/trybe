@@ -26,7 +26,7 @@ const contents = [
 class Content extends React.Component {
   render() {
     const newContents = contents.map(element => 
-      <ol>
+      <ol className='content'>
         <li>O conteúdo é {element.content}</li>
         <li>Status: {element.status}</li>
         <li>Bloco: {element.block}</li>
