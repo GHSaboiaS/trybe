@@ -7,9 +7,9 @@ class Pokemon extends React.Component {
     return (
       <div className="pokemon-container">
         <section className="pokemon-info">
-          <span className="pokemon-name">{ props.name }</span>
-          <span className="pokemon-type">{ props.type }</span>
-          <span className="pokemon-weight">{ `${props.averageWeight.value}${props.averageWeight.measurementUnit}` }</span>
+          <span className="pokemon-info-item">{ props.name }</span>
+          <span className="pokemon-info-item">{ props.type }</span>
+          <span className="pokemon-info-item">{ `${props.averageWeight.value}${props.averageWeight.measurementUnit}` }</span>
         </section>
         <section className="image-container">
           <img src={ props.image } alt='pokeimage'></img>
