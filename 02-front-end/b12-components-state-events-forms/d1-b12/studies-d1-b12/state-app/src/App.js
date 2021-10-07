@@ -1,9 +1,9 @@
 import './App.css';
-import Button from './components/Button'
+import ButtonsContainer from './components/ButtonsContainer'
 
 function App() {
   return (
-    <Button />
+    <ButtonsContainer />
   )
 }
 
