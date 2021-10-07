@@ -10,17 +10,17 @@ class Button extends React.Component {
     }
   }
 
-  handleClick() {
-    this.setState((previousState, _props)=> ({
+  async handleClick() {
+    await this.setState((previousState, _props) => ({
       clickCount: previousState.clickCount + 1,
     }))
-
+    
     if (this.state.clickCount % 2 === 0) {
       this.setState((_previousState, _props) => ({
         green: true,
       }))
     } else {
-      this.state((_previousState, _props) => ({
+      this.setState((_previousState, _props) => ({
         green: false,
       }))
     }
