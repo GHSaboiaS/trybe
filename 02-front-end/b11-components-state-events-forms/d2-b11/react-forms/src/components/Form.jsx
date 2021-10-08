@@ -1,4 +1,6 @@
 import React from 'react';
+import SelectLanguage from './SelectLanguage';
+import SelectColor from './SelectColor';
 
 class Form extends React.Component {
   constructor() {
@@ -23,19 +25,13 @@ class Form extends React.Component {
     return (
       <div className="form-container">
         <h1>Form</h1>
-        <select name="language" onChange={ this.handleChange }>
-          {/* Source: https://stackoverflow.com/a/30525521  */}
-          <option defaultValue hidden>Select a language</option>
-          <option>English</option>
-          <option>Italian</option>
-          <option>Portuguese</option>
-        </select>
-        <label>Select a color
-          <input type="color" name="color" onChange={ this.handleChange }></input>
-        </label>
+        <SelectLanguage value={ this.state.language } handleChange={ this.handleChange } />
+        <SelectColor handleChange={ this.handleChange } />
+
         <label>Enter your name
           <input type="text" name="userName" onChange={ this.handleChange } value={ this.state.userName }></input>
         </label>
+
         <div className="countries-container">
           <label>Brazil
             <input type="checkbox" name="country" value="brazil" onChange={ this.handleChange }></input>
@@ -47,6 +43,7 @@ class Form extends React.Component {
             <input type="checkbox" name="country" value="peru" onChange={ this.handleChange }></input>
           </label>
         </div>
+
       </div>
     )  
   }
