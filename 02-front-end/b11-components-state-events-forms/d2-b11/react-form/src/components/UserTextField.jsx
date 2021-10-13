@@ -3,10 +3,10 @@ import React from 'react';
 class UserTextField extends React.Component {
 
   render() {
-    const { info, handleChange } = this.props;
+    const { info, limit, handleChange, handleBlur } = this.props;
     return (
       <label>{ info }: 
-        <input onChange={ handleChange }></input>
+        <input onChange={ handleChange } onBlur={ handleBlur } maxLength={limit} info={info}></input>
       </label>
     )
   }
