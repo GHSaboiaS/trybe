@@ -2,7 +2,7 @@
 	path = 01-fundamentos/bloco-06-html-css-forms-flex-responsive/d-03-b-06/01-fundamentos/bloco-06-html-css-forms-flex-responsive/d-03-b-06/exercises-d-03-b-06/exercise-tech-gallery
 	url = https://github.com/ghsaboias/exercise-tech-gallery
 [submodule "02-front-end/b12-life-cycle-components-router/d1-b12/exercise-dog-image"]
-	path = 02-front-end//b12-life-cycle-components-router/d1-b12/exercise-dog-image
+	path = 02-front-end/b12-life-cycle-components-router/d1-b12/exercise-dog-image
 	url = https://github.com/ghsaboias/exercise-dog-image
 [submodule "02-front-end/b12-life-cycle-components-router/d1-b12/exercises-lifecycle-step-by-step"]
 	path = 02-front-end/b12-life-cycle-components-router/d1-b12/exercises-lifecycle-step-by-step
