@@ -7,3 +7,6 @@
 [submodule "02-front-end/02-front-end/b12-life-cycle-components-router/d1-b12/exercises-lifecycle-step-by-step"]
 	path = 02-front-end/02-front-end/b12-life-cycle-components-router/d1-b12/exercises-lifecycle-step-by-step
 	url = https://github.com/ghsaboias/exercises-lifecycle-step-by-step
+[submodule "02-front-end/02-front-end/b12-life-cycle-components-router/d2-b12/comprehension-exercises-router"]
+	path = 02-front-end/02-front-end/b12-life-cycle-components-router/d2-b12/comprehension-exercises-router
+	url = https://github.com/ghsaboias/comprehension-exercises-router
