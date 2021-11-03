@@ -10,3 +10,6 @@
 [submodule "02-front-end/b12-life-cycle-components-router/d2-b12/comprehension-exercises-router"]
 	path = 02-front-end/b12-life-cycle-components-router/d2-b12/comprehension-exercises-router
 	url = https://github.com/ghsaboias/comprehension-exercises-router
+[submodule "02-front-end/b14-react-testing-library/exercise-todo-list"]
+	path = 02-front-end/b14-react-testing-library/exercise-todo-list
+	url = git@github.com:ghsaboias/exercise-todo-list.git

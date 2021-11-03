@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ValidEmail from './ValidEmail';
 
 class App extends React.Component {
   constructor(props) {
@@ -45,7 +46,7 @@ class App extends React.Component {
           data-testid="id-back"
           value="Return"
         />
-        <h1 data-testid="id-email-user">{ screenEmail }</h1>
+        <ValidEmail email={ screenEmail } />
       </div>
     );
   }
