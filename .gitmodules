@@ -13,3 +13,6 @@
 [submodule "02-front-end/b14-react-testing-library/exercise-todo-list"]
 	path = 02-front-end/b14-react-testing-library/exercise-todo-list
 	url = git@github.com:ghsaboias/exercise-todo-list.git
+[submodule "02-front-end/b14-react-testing-library/todo-list"]
+	path = 02-front-end/b14-react-testing-library/todo-list
+	url = git@github.com:ghsaboias/exercise-todo-list.git
