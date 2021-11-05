@@ -14,7 +14,7 @@ class App extends React.Component {
     const API_URL = 'https://icanhazdadjoke.com/';
     fetch(API_URL, { headers: { Accept: 'application/json' } })
       .then((response) => response.json())
-      .then((data) => this.setState({ joke: data.joke }));
+      .then(({ joke }) => this.setState({ joke }));
   }
 
   render() {
