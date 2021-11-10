@@ -7,13 +7,30 @@
 
 function largest_prime_factor(number) {
   // Write your code here
-  let divisors = [];
+  const divisors = [];
+  // getting divisors of number
   for (let i = 1; i <= number; i += 1) {
     if (number % i === 0) {
       divisors.push(i);
     }
   }
-  console.log(divisors);
-}
+  
+  let primeDivisors = [];
+  // iterating through divisors array
+  for (let n = 0; n < divisors.length; n += 1) {
+    let divisorDivisors = [];
+    // getting divisors of divisor
+    for (let t = 1; t <= divisors[n]; t += 1) {
+      if (divisors[n] % t === 0) {
+        divisorDivisors.push(t);
+      }
+    }
 
-largest_prime_factor(20);
+    // getting prime divisors
+    if (divisorDivisors.length === 2) {
+      primeDivisors.push(divisors[n]);
+    }
+  }
+  
+  return primeDivisors[primeDivisors.length - 1];
+}
