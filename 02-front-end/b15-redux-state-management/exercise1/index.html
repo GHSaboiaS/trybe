@@ -97,10 +97,7 @@
       const store = Redux.createStore(reducer);
 
       const actionCreator = (type) => {
-        const returnValue = {
-          type,
-        };
-        store.dispatch(returnValue);
+        store.dispatch({ type });
       } 
 
       previousBtn.addEventListener('click', () => actionCreator(PREVIOUS_COLOR));
