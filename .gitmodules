@@ -19,3 +19,6 @@
 [submodule "02-front-end/b15-redux-state-management/d4-b15/exercise-redux-thunk"]
 	path = 02-front-end/b15-redux-state-management/d4-b15/exercise-redux-thunk
 	url = https://github.com/ghsaboias/exercise-redux-thunk
+[submodule "02-front-end/b15-redux-state-management/d4-b15/exercise-game-of-thrones-characters"]
+	path = 02-front-end/b15-redux-state-management/d4-b15/exercise-game-of-thrones-characters
+	url = https://github.com/ghsaboias/exercise-game-of-thrones-characters
