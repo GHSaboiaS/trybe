@@ -4,6 +4,7 @@ import { render, cleanup } from '@testing-library/react';
 import App from './App';
 import { createStore, combineReducers  } from 'redux';
 import clickReducer from './reducers';
+import userEvent from '@testing-library/user-event';
 
 const renderWithRedux = (
   component,
@@ -25,9 +26,20 @@ describe('testing clicks', () => {
     expect(queryByText('0')).toBeInTheDocument();
   })
 
-  it('a click in a button should increment the value of clicks', () => {
+  it('initializing state with different number', () => {
     const { queryByText } = renderWithRedux(<App />, { initialState: { clickReducer: { counter: 5 }}});
 
     expect(queryByText('5')).toBeInTheDocument();
   });
+
+  it('clicking button adds one to counter', () => {
+    const { queryByText } = renderWithRedux(<App />, { initialState: { clickReducer: { counter: 5 }}});
+    const buttonAdd = queryByText('Clique aqui');
+
+    expect(queryByText('5')).toBeInTheDocument();
+    expect(buttonAdd).toBeInTheDocument();
+
+    userEvent.click(buttonAdd);
+    expect(queryByText('6')).toBeInTheDocument();
+  })
 })
