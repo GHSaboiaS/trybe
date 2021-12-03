@@ -28,3 +28,6 @@
 [submodule "02-front-end/b17-context-api/exercise-contextAPI-refactoring"]
 	path = 02-front-end/b17-context-api/exercise-contextAPI-refactoring
 	url = https://github.com/ghsaboias/exercise-contextAPI-refactoring
+[submodule "02-front-end/b17-context-api/d2-b17/exercise-tryfood"]
+	path = 02-front-end/b17-context-api/d2-b17/exercise-tryfood
+	url = https://github.com/ghsaboias/exercise-tryfood
