@@ -1,0 +1,94 @@
+container: local onde fica a aplicação, com todas as configurações (OS, distribuição do OS, bibliotecas) compartilhadas por quem usa o serviço (mental image: virtual machine or context)
+
+containerd: serviço que funciona em segundo plano (daemon), usado no funcionamento dos containers
+
+docker run hello-world: busca uma imagem chamada hello-world no repositório oficial do Docker (Docker hub, repositório oficial de imagens)
+Docker client contacts Docker daemon -> Docker daemon pulls "hello-world" image from Docker hub -> Docker daemon creates new container from image, which runs the executable that produces output -> Docker daemon streams output to Docker client, which sends it to terminal
+
+CLI commands
+
+docker <command> <subcommand> <parameters> // is standard for non-abbreviated commands (parameters are optional)
+use flag --help for <command> or <subcommand> // for help
+
+docker container --help
+docker container run --help
+
+docker container run <parâmetros> <imagem>:<tag> // creates and runs container (tag is version, default is latest)
+docker container run --name <nome-da-sua-escolha> <imagem>:<tag> // --name is a parameter for choosing container name
+docker container run --rm <imagem>:<tag> // -rm removes container after execution (test images without accumulating new containers)
+docker container run -d <imagem>:<tag> // -d runs container in background (docker ps -a), remember daemon
+
+docker container create <parâmetros> <imagem>:<tag> // creates container
+docker container create -it <imagem>:<tag> // --it gives access terminal to container, allowing interaction
+
+docker container ls // lists active containers (ls == ps)
+docker container ls -a // lists active and inactive containers
+docker container ls -l // lists last created container
+
+docker container start <CONTAINER ID(s) || NAMES> // starts specific container(s) (that already existed)
+docker container restart <CONTAINER ID || NAMES>
+docker container pause <CONTAINER ID || NAMES>
+docker container unpause <CONTAINER ID || NAMES>
+docker container stop <CONTAINER ID || NAMES>
+
+docker container attach <CONTAINER ID || NAMES> // access background container
+
+docker container rm <CONTAINER ID || NAMES> // removes inactive container
+docker container rm -f <CONTAINER ID || NAMES> // removes active container
+
+docker container prune // removes all inactive containers (use carefully)
+
+docker container top <CONTAINER ID || NAMES> // shows processes running inside container
+
+imagem: arquivo imutável, pode gerar um ou mais containers. Criada com o build a partir do arquivo Dockerfile. Contém fotos de programas, bibliotecas, frameworks, OS, a partir das quais construímos containers e executamos códigos dentro do Docker
+build: construir, a partir de instruções (imagem), um produto que seja executável de maneira mais simples (melhor para distribuição)
+
+docker images // lista imagens armazenadas localmente
+
+uma mesma imagem pode gerar vários containers
+
+docker rmi -f <IMAGE ID> // removes image even if containers created from it, leaving them ORPHANS
+
+se remover uma imagem que era referência de um container, para rodá-lo de novo devemos baixar a imagem novamente
+
+docker pull <image> // downloads image without creating container
+
+camadas: Docker divide imagens em camadas (Layered File System, cada camada é um conjunto de instruções) para permitir reaproveitamento de camadas por outras imagens, sem necessidade de instalar a imagem duas 
+
+container layer: quando container é criado a partir de imagem (camadas imutáveis, apenas com permissão de leitura), uma nova camada é gerada (container layer), e permite leitura e escrita
+
+docker container run -d -P httpd:2.4 // runs container based on httpd:2.4 image (http server Apache), binds ports automatically
+docker container run -d -p <PORTA MÁQUINA>:<PORTA CONTAINER> httpd:2.4 // binds ports manually, correct container port varies depending on which application you're running
+
+docker commit // salva alterações feitas no container em uma nova imagem
+
+touch Dockerfile // cria arquivo Dockerfile (contém instruções para criação da imagem)
+
+ubuntu:8 é melhor que ubuntu:latest, pois trava a versão da imagem
+sempre que possível, usar versões minimalistas da imagem (tags alpine ou slim)
+
+cmd sempre é exectuado depois que o container é iniciado (pode definir vários no Dockerfile, mas só último executa), sobrescrito pelo run
+
+.dockerignore // inserir neste arquivo o que não se quer copiar para dentro do container
+
+docker image build -t <name:tag> <origem_docker_file> // cria imagem (de fato) a partir do Dockerfile (-t é para passar tag v1)
+
+cada comando no Dockerfile cria uma camada
+
+Environment Variables: disponíveis para todas as apps instaladas naquele OS
+
+NETWORKS
+default (3): bridge, none and host
+
+if not specified on creation, container is associated with bridge network
+
+BRIDGE: TCP/IP for communication between containers
+IP changes if container is reset
+
+busybox: based on unix, good for testing basic ideas/commands
+docker container run -ti --name container1 busybox // creates container1 based on busybox image
+docker container run -ti --link container1 --name container2 busybox // creates container2, links it to container1, can do ping container1 to check // --link is not encouraged (allows for nicknames), and connection is available by IP too
+
+HOST: host is machine that runs Docker environment. Avoid this network.
+
+NONE: isolated (good for backups or file that only runs a local script)
