@@ -92,3 +92,16 @@ docker container run -ti --link container1 --name container2 busybox // creates 
 HOST: host is machine that runs Docker environment. Avoid this network.
 
 NONE: isolated (good for backups or file that only runs a local script)
+
+listing networks:
+docker network ls
+
+creating network:
+docker network create --driver bridge rede-local // --drive bridge selects bridge as the network driver
+
+connecting container to network:
+docker network connect rede-local novo_container
+
+docker container run -it --name outro_container --network rede-local <IMAGEM> // creates container and connects to network on creation
+
+
